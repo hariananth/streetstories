@@ -1,0 +1,69 @@
+#overlay {
+	background-color: rgba(0,0,0,.7);
+	position: absolute;
+	top: 50;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: 1;
+}
+
+.intro {
+	margin-top: 30vh;
+}
+
+.intro h1, .intro p {
+	color: #efefef;
+}
+
+.intro h1 {
+	font-size: 5em;
+	font-family: 'Oswald', sans-serif;
+}
+
+.book-width {
+	margin: 0 auto;
+	width: 50%;
+}
+
+.half {
+	padding-top: 30px;
+	margin: 0 35%;
+	width: 30%;
+}
+
+#storyStart {
+	background-color: none;
+	border-radius: 10px;
+	border: 1px solid #efefef;
+	padding: 12px;
+}
+
+#storyStart:hover {
+	background-color: rgba(0,0,0,.8);
+	padding: 12px;
+	box-shadow: 0px 0px 30px 0px rgba(255,255,255,.6);
+}
+
+.top-bar-section li a {
+	line-height: 60px;
+	padding: 8px;
+}
+
+li a i {
+	font-size: 2em;
+	display: block;
+	padding: 6px 10px 0px 10px;
+}
+
+.icon-tweak {
+	margin-left: 3px;
+	font-size: 1.3em;
+}
+
+.top-bar, .top-bar-section ul li, .top-bar-section ul li a {
+	height: 60px;
+	line-height: 60px;
+}
+
+
