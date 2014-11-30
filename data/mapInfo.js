@@ -55,7 +55,7 @@ window.mapInfo = [
     "markers": [
       {
 "date": "August 11, 2014",
-"lat": 338.749613
+"lat": 38.749613,
 "lng": -90.279912,
 "headline": "Protests continue two days after Michael Brown's death",
 "type": window.markerTypes.social,
@@ -81,8 +81,7 @@ window.mapInfo = [
 "type": window.markerTypes.social,
 "contentType": window.infoTypes.tweet,
 "link": "",
-"content": "<blockquote class="twitter-tweet" lang="en"><p>It&#39;s just past 1 a.m. in <a href="https://twitter.com/hashtag/Ferguson?src=hash">#Ferguson</a>, and this is what we&#39;re seeing <a href="http://t.co/ZiKgGP2TGq">pic.twitter.com/ZiKgGP2TGq</a></p>&mdash; Alan Blinder (@alanblinder) <a href="https://twitter.com/alanblinder/status/500522932914114561">August 16, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>"
+"content": '<blockquote class="twitter-tweet" lang="en"><p>It&#39;s just past 1 a.m. in <a href="https://twitter.com/hashtag/Ferguson?src=hash">#Ferguson</a>, and this is what we&#39;re seeing <a href="http://t.co/ZiKgGP2TGq">pic.twitter.com/ZiKgGP2TGq</a></p>&mdash; Alan Blinder (@alanblinder) <a href="https://twitter.com/alanblinder/status/500522932914114561">August 16, 2014</a></blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>'
 },
     ]
   },
@@ -92,7 +91,18 @@ window.mapInfo = [
     "lng": -90.338427,
     "markers": [
       {
-"date": "August 11, 2014",
+"date": "August 12, 2014",
+"lat": 38.648863,
+"lng": -90.338427,
+"headline": "",
+"type": window.markerTypes.social,
+"contentType": window.infoTypes.tweet,
+"link": "",
+"content": "<blockquote class="twitter-tweet" lang="en"><p>love this &lt;3 RT <a href="https://twitter.com/stevenjhsieh">@stevenjhsieh</a>: Man waving a Palestinian flag in <a href="https://twitter.com/hashtag/Ferguson?src=hash">#Ferguson</a> &quot;because they supported St. Louis.&quot; <a href="http://t.co/tn96pvFEXF">pic.twitter.com/tn96pvFEXF</a></p>&mdash; Grim_Chickn (@grm_chikn) <a href="https://twitter.com/grm_chikn/status/500793766081744896">August 16, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>"
+},
+{
+"date": "August 12, 2014",
 "lat": 38.735419,
 "lng": -90.278376,
 "headline": "",
@@ -103,23 +113,12 @@ window.mapInfo = [
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>"
 },
 {
-"date": "August 11, 2014",
-"lat": 38.735419,
-"lng": -90.278376,
+"date": "August 12, 2014",
+"lat": 38.738455,
+"lng": -90.277542,
 "headline": "",
 "type": window.markerTypes.social,
-"contentType": window.infoTypes.tweet,
-"link": "",
-"content": "<blockquote class="twitter-tweet" lang="en"><p>It&#39;s just past 1 a.m. in <a href="https://twitter.com/hashtag/Ferguson?src=hash">#Ferguson</a>, and this is what we&#39;re seeing <a href="http://t.co/ZiKgGP2TGq">pic.twitter.com/ZiKgGP2TGq</a></p>&mdash; Alan Blinder (@alanblinder) <a href="https://twitter.com/alanblinder/status/500522932914114561">August 16, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>"
-},
-{
-"date": "August 11, 2014",
-"lat": 38.735419,
-"lng": -90.278376,
-"headline": "",
-"type": window.markerTypes.social,
-"contentType": window.infoTypes.tweet,
+"contentType": window.infoTypes.picture,
 "link": "",
 "content": "<blockquote class="twitter-tweet" lang="en"><p>It&#39;s just past 1 a.m. in <a href="https://twitter.com/hashtag/Ferguson?src=hash">#Ferguson</a>, and this is what we&#39;re seeing <a href="http://t.co/ZiKgGP2TGq">pic.twitter.com/ZiKgGP2TGq</a></p>&mdash; Alan Blinder (@alanblinder) <a href="https://twitter.com/alanblinder/status/500522932914114561">August 16, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>"
