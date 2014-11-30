@@ -6,8 +6,8 @@ window.types = {
 window.mapInfo = [
   {
     "date": "08/09/2014",
-    "lat": 38.73847, // first lat-long is actually set by sosv (content.json)
-    "lng": -90.27387, // so these aren't used
+    "lat": 38.738312, // first lat-long is actually set by sosv (content.json)
+    "lng": -90.273611, // so these aren't used
     "markers": [
       {
         "img": "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg",

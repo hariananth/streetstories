@@ -3,6 +3,7 @@ new SOSV("data/content.json");
 
 // hold markers so we can always remove them later
 window.currentMarkers = [];
+window.currentInfoWindows = [];
 
 // Script for showing / hiding the opening text
 $(function() {
@@ -60,11 +61,18 @@ function addMarker(markerInfo) {
     content: contentString
   });
   google.maps.event.addListener(marker, "click", function() {
+    // close open infowindows
+    while(window.currentInfoWindows.length > 0) {
+      window.currentInfoWindows.pop().close();
+    }
+    // save new infowindow
+    window.currentInfoWindows.push(markerIW);
+    // show
     markerIW.open(window.map, marker);
     //modifyInfoWindows();
   });
 
-  // save
+  // save marker and infowindow
   window.currentMarkers.push(marker);
 }
 
