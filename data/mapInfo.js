@@ -12,41 +12,96 @@ window.infoTypes = {
 
 window.mapInfo = [
   {
-    "date": "08/09/2014",
+    "date": "August 9-10, 2014",
     "lat": 38.738312, // first lat-long is actually set by sosv (content.json)
     "lng": -90.273611, // so these aren't used
     "markers": [
       {
-        "img": "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg",
-        "lat": 38.73833,
-        "lng": -90.273100,
-        "title": "Michael Brown Memorial",
-        "mtype": window.markerTypes.gov,
-        "itype": window.infoTypes.video,
-        "content": "<iframe width='420' height='315' src='http://www.youtube.com/embed/zUXqPDT8hr4?autoplay=1'></iframe>"
+        "date": "August 9, 2014",
+        "lat": 38.739332,
+        "lng": -90.273152,
+        "headline": "On August 9th, 18-year-old Michael Brown was shot and killed",
+        "type": window.markerTypes.news,
+        "contentType": window.infoTypes.video,
+        "link": "",
+        "content": "6SGkD6CN0mk"
       },
-      {
-        "img": "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg",
-        "lat": 38.73783,
-        "lng": -90.273200,
-        "title": "Some guy named Ferguson",
-        "mtype": window.markerTypes.social,
-        "itype": window.infoTypes.tweet,
-        "content": "<blockquote class='twitter-tweet' lang='en'><p>Breaking News: No Indictment of Officer in Ferguson Case&#10;<a href='http://t.co/8f1zBwGHbV'>http://t.co/8f1zBwGHbV</a></p>&mdash; The New York Times (@nytimes) <a href='https://twitter.com/nytimes/status/537070083982753792'>November 25, 2014</a></blockquote><script async src='//platform.twitter.com/widgets.js' charset='utf-8'></script>"
-      },
-      {
-        "img": "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg",
-        "lat": 38.73803,
-        "lng": -90.273100,
-        "title": "Michael Brown Memorial",
-        "mtype": window.markerTypes.fam,
-        "itype": window.infoTypes.picture,
-        "content": "<img src='https://c2.staticflickr.com/6/5591/14841313420_6d555fdc4c_b.jpg' />"
-      }
+        {
+"date": "August 10, 2014",
+"lat": 38.743812,
+"lng": -90.279095,
+"headline": "",
+"type": window.markerTypes.family,
+"contentType": window.infoTypes.picture,
+"link": "",
+"content": "http://scontent-a-ams.cdninstagram.com/hphotos-xpf1/l/t51.2885-15/1738085_692070914213393_1197767717_n.jpg"
+},
+ {
+"date": "August 10, 2014",
+"lat": 38.740877,
+"lng": -90.303086,
+"headline": "",
+"type": window.markerTypes.gov,
+"contentType": window.infoTypes.video,
+"link": "",
+"content": "zUXqPDT8hr4"
+},
     ]
   },
   {
-    "date": "08/10/2014",
+    "date": "August 11, 2014",
+    "lat": 38.749613,
+    "lng": -90.279912,
+    "markers": [
+      {
+"date": "August 11, 2014",
+"lat": 338.749613
+"lng": -90.279912,
+"headline": "Protests continue two days after Michael Brown's death",
+"type": window.markerTypes.social,
+"contentType": window.infoTypes.picture,
+"link": "",
+"content": "https://c4.staticflickr.com/4/3860/14794832317_db2b6eeb98_b.jpg"
+},
+    {
+"date": "August 11, 2014",
+"lat": 38.749613,
+"lng": -90.279912,
+"headline": "",
+"type": window.markerTypes.social,
+"contentType": window.infoTypes.picture,
+"link": "",
+"content": "zUXqPDT8hr4"
+},
+   {
+"date": "August 11, 2014",
+"lat": 38.735419,
+"lng": -90.278376,
+"headline": "",
+"type": window.markerTypes.social,
+"contentType": window.infoTypes.tweet,
+"link": "",
+"content": "<blockquote class="twitter-tweet" lang="en"><p>It&#39;s just past 1 a.m. in <a href="https://twitter.com/hashtag/Ferguson?src=hash">#Ferguson</a>, and this is what we&#39;re seeing <a href="http://t.co/ZiKgGP2TGq">pic.twitter.com/ZiKgGP2TGq</a></p>&mdash; Alan Blinder (@alanblinder) <a href="https://twitter.com/alanblinder/status/500522932914114561">August 16, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>"
+},
+    ]
+  },
+  {
+    "date": "August 15th",
+    "lat": 38.73857,
+    "lng": -90.27387,
+    "markers": [
+    ]
+  },
+  {
+    "date": "August 20th",
+    "lat": 38.73857,
+    "lng": -90.27387,
+    "markers": [
+    ]
+  },
+  {
+    "date": "August 25th",
     "lat": 38.73857,
     "lng": -90.27387,
     "markers": [

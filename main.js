@@ -31,7 +31,10 @@ function initialize() {
   if (dateIdxIsValid(0)) {
     // add markers for starting location
     addMarkers(window.mapInfo[0]);
+    // configure dates
     populateDateSelector();
+    // kill infowindows if the user changes positions
+    google.maps.event.addListener(window.map, "position_changed", closeInfoWindows);
   }
 }
 
@@ -39,9 +42,10 @@ function populateDateSelector() {
   $(document).ready(function(){
     //slideIndex=0;
     $('.timeline').slick({
-      slidesToShow: window.mapInfo.length,
+      slidesToShow: 5, //window.mapInfo.length,
+      slidesToScroll: 5,
       arrows: true,
-      dots: true,
+      dots: false,
       focusOnSelect: true,
       draggable: true,
       infinite: true,
@@ -69,7 +73,6 @@ function changeDate() {
   }
 }
 
-
 function addMarkers(info) {
   if (window.map !== null &&
       typeof(info.markers) !== undefined &&
@@ -84,23 +87,31 @@ function addMarkers(info) {
 function addMarker(markerInfo) {
   // create marker
   var markerPos = new google.maps.LatLng(markerInfo.lat, markerInfo.lng);
+  var markerImg = "";
+  if (markerInfo.type === window.markerTypes.family) {
+    markerImg = "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg";
+  } else if (markerInfo.type === window.markerTypes.gov) {
+    markerImg = "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg";
+  } else if (markerInfo.type === window.markerTypes.news) {
+    markerImg = "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg";
+  } else if (markerInfo.type === window.markerTypes.social) {
+    markerImg = "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg";
+  }
   var marker = new google.maps.Marker({
     position: markerPos,
     map: window.map,
-    icon: markerInfo.img,
+    icon: markerImg,
     title: markerInfo.title
   });
 
   // create associated infowindow
-  var contentString = "<div class='ss-info-window "+markerInfo.mtype+" "+markerInfo.itype+"'>"+markerInfo.content+"</div>";
+  var contentString = "<div class='ss-info-window' style='padding: 30px !important'><div class='ss-info-title'>"+markerInfo.title+"</div><div class='ss-info-content "+markerInfo.contentType+"'>"+markerInfo.content+"</div><div class='ss-info-link'><a href='"+markerInfo.link+"'>Read more...</a></div></div>";
   var markerIW = new google.maps.InfoWindow({
     content: contentString
   });
   google.maps.event.addListener(marker, "click", function() {
     // close open infowindows
-    while(window.currentInfoWindows.length > 0) {
-      window.currentInfoWindows.pop().close();
-    }
+    closeInfoWindows();
     // save new infowindow
     window.currentInfoWindows.push(markerIW);
     // show
@@ -112,12 +123,17 @@ function addMarker(markerInfo) {
   window.currentMarkers.push(marker);
 }
 
+function closeInfoWindows() {
+  while(window.currentInfoWindows.length > 0) {
+    window.currentInfoWindows.pop().close();
+  }
+}
+
 function modifyInfoWindows() {
   var iterator = document.evaluate("//div[contains(@class, 'ss-info-window')]", document, null, XPathResult.UNORDERED_NODE_ITERATOR_TYPE, null );
   try {
     var thisNode = iterator.iterateNext();
     while (thisNode) {
-      console.log(thisNode);
       thisNode = iterator.iterateNext();
     }
   } catch (e) {
