@@ -207,3 +207,4 @@ window.mapInfo = [
     ]
   }
 ];
+
