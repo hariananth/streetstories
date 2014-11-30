@@ -3,6 +3,7 @@ new SOSV("data/content.json");
 
 // hold markers so we can always remove them later
 window.currentMarkers = [];
+window.currentInfoWindows = [];
 
 // Script for showing / hiding the opening text
 $(function() {
@@ -25,13 +26,13 @@ function dateIdxIsValid(idx) {
   return true
 }
 
+// called once the map has been created
 function initialize() {
   if (dateIdxIsValid(0)) {
     // add markers for starting location
     addMarkers(window.mapInfo[0]);
     populateDateSelector();
   }
-
 }
 
 function populateDateSelector() {
@@ -70,29 +71,51 @@ function addMarkers(info) {
   }
 }
 
-function addMarker(marker) {
-  var markerInfo = new google.maps.InfoWindow({
-    content: marker.content
-  });
-  var markerPos = new google.maps.LatLng(marker.lat, marker.lng);
-
-  // Setup the markers on the map
+function addMarker(markerInfo) {
+  // create marker
+  var markerPos = new google.maps.LatLng(markerInfo.lat, markerInfo.lng);
   var marker = new google.maps.Marker({
     position: markerPos,
     map: window.map,
-    icon: marker.img,
-    title: marker.title
+    icon: markerInfo.img,
+    title: markerInfo.title
   });
 
+  // create associated infowindow
+  var contentString = "<div class='ss-info-window "+markerInfo.type+"'>"+markerInfo.content+"</div>";
+  var markerIW = new google.maps.InfoWindow({
+    content: contentString
+  });
   google.maps.event.addListener(marker, "click", function() {
-    markerInfo.open(window.map, marker);
-    //map.setCenter(marker.getPosition());
+    // close open infowindows
+    while(window.currentInfoWindows.length > 0) {
+      window.currentInfoWindows.pop().close();
+    }
+    // save new infowindow
+    window.currentInfoWindows.push(markerIW);
+    // show
+    markerIW.open(window.map, marker);
+    //modifyInfoWindows();
   });
 
+  // save marker and infowindow
   window.currentMarkers.push(marker);
 }
 
-// helper function to move map to location of date and add markers
+function modifyInfoWindows() {
+  var iterator = document.evaluate("//div[contains(@class, 'ss-info-window')]", document, null, XPathResult.UNORDERED_NODE_ITERATOR_TYPE, null );
+  try {
+    var thisNode = iterator.iterateNext();
+    while (thisNode) {
+      console.log(thisNode);
+      thisNode = iterator.iterateNext();
+    }
+  } catch (e) {
+    dump( 'Error: Document tree modified during iteration ' + e );
+  }
+}
+
+// remove old markers, move map to location of (date), add markers
 function setDate(dateIdx) {
   if (dateIdxIsValid(dateIdx)) {
     var newInfo = window.mapInfo[dateIdx];
