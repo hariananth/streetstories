@@ -31,8 +31,35 @@ function initialize() {
   if (dateIdxIsValid(0)) {
     // add markers for starting location
     addMarkers(window.mapInfo[0]);
+    populateDateSelector();
   }
 }
+
+function populateDateSelector() {
+  $(document).ready(function(){
+    //slideIndex=0;
+    $('.timeline').slick({
+      slidesToShow: window.mapInfo.length,
+      arrows: true,
+      dots: true,
+      focusOnSelect: true,
+      draggable: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      centerMode: true,
+      variableWidth: true
+    });
+
+    $.each( window.mapInfo, function( index, value ){
+      console.log(value.date);
+      var link_date = '<div><h3>'+value.date+'</h3></div>';
+      $('.timeline').slickAdd(link_date)
+    });
+ 
+  });
+}
+
 
 function addMarkers(info) {
   if (window.map !== null &&
