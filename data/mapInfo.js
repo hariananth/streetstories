@@ -33,6 +33,17 @@ window.mapInfo = [
     "lat": 38.73857,
     "lng": -90.27387,
     "markers": [
+      {
+"date": "August 10, 2014",
+"lat": 38.743812,
+"lng": -90.279095,
+"headline": "",
+"type": window.markerTypes.family,
+"contentType": window.infoTypes.picture,
+"link": "",
+"content": "http://scontent-a-ams.cdninstagram.com/hphotos-xpf1/l/t51.2885-15/1738085_692070914213393_1197767717_n.jpg"
+},
+
     ]
   },
   {
