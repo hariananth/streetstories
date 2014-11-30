@@ -124,3 +124,14 @@ li a i {
 	background-size: 90%;
 	background-image: url('/img/streetstories2.png');
 }
+
+.middle {
+	margin: 0 auto;
+	width: 100%;
+	height: 60px;
+	overflow: hidden;
+	display: none;
+}
+
+
+
