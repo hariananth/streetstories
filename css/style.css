@@ -59,10 +59,14 @@ g, circle, img[src*="gstatic"][style*='left: 0px'], img[src*="gstatic"][style*='
 #mappop {
 	position: absolute;
 	display: none;
+	height: 300px;
 	width: 300px;
 	top: 80px;
 	right: 20px;
 	z-index: 2;
+}
+#mapToggle.loading {
+  opacity: 0.3;
 }
 
 .intro {

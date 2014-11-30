@@ -7,10 +7,10 @@ $(function() {
   $("#overlay").click(function(){
     $("#overlay").css("display", "none");
   })
-  $(".infoReturn").click(function(){
+  $("#infoReturn").click(function(){
     $("#overlay").slideToggle();
   });
-  $(".mapToggle").click(function(){
+  $("#mapToggle").click(function(){
     $("#mappop").slideToggle();
   })
   $(".name").click(function(){
@@ -55,6 +55,7 @@ function createOverheadMap() {
   var mapCanvas = new google.maps.Map(mapDiv, mapOptions);
   mapCanvas.setStreetView(window.map);
   mapCanvas.bindTo("center", window.map, "position");
+  $("#mapToggle").removeClass("loading");
 }
 
 function populateDateSelector() {
