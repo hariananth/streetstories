@@ -6,8 +6,9 @@ $(function(){
   $('.intro').click(function(){
     $('#overlay').css('display', 'none');
   });
-  $('#info-toggle').click(function(){
-    $('#overlay').slideToggle();
+  $('.info-toggle').click(function(){
+    //$('#overlay').slideToggle();
+    $('#overlay').css('display', 'block');
   });
 });
 
