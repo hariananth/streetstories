@@ -28,7 +28,11 @@
     <!-- App JS files -->
     <script src="main.js"></script>
     <!-- <script src="data/ferguson.js"></script> -->
-    <script src="data/ferguson_test.js"></script>
+    <script src="data/ferguson.js"></script>
+    <script>
+      // load map content via sosv
+      new SOSV("data/content.json");
+    </script>
   </head>
   <body>
     <nav class="top-bar" data-topbar role="navigation">
@@ -65,7 +69,9 @@
         </ul>
       </section>
     </nav>
-    <div class="slider timeline">
+    <div class="controls">
+      <div class="slider timeline">
+      </div>
     </div>
     <div id="overlay">
       <div class="intro">

@@ -89,7 +89,7 @@ function populateDateSelector() {
 
     $.each( window.mapInfo, function( index, value ){
       console.log(value.date);
-      var link_date = '<div><h3>'+value.date+'</h3></div>';
+      var link_date = '<div><h3 class="text-center slider-tweak">'+value.date+'</h3></div>';
       $('.timeline').slickAdd(link_date)
     });
  
@@ -120,13 +120,13 @@ function addMarker(markerInfo) {
   var markerPos = new google.maps.LatLng(markerInfo.lat, markerInfo.lng);
   var markerImg = "";
   if (markerInfo.type === window.markerTypes.family) {
-    markerImg = "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg";
+    markerImg = "img/ribbon.png";
   } else if (markerInfo.type === window.markerTypes.gov) {
-    markerImg = "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg";
+    markerImg = "img/govdocs.png";
   } else if (markerInfo.type === window.markerTypes.news) {
-    markerImg = "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg";
+    markerImg = "img/news.png";
   } else if (markerInfo.type === window.markerTypes.social) {
-    markerImg = "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg";
+    markerImg = "img/protest.png";
   }
   var marker = new google.maps.Marker({
     position: markerPos,

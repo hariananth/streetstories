@@ -69,6 +69,23 @@ g, circle, img[src*="gstatic"][style*='left: 0px'], img[src*="gstatic"][style*='
 	z-index: 2;
 }
 
+.controls {
+	position: absolute;
+	margin-left: 43%;
+	top: 0;
+	z-index: 2;
+}
+
+.slider-tweak {
+	font-size: 1em;
+	margin-top: 15px;
+}
+
+.timeline div {
+/*	width: 100%;
+	margin: 0 auto;*/
+}
+
 .intro {
 	margin-top: 30vh;
 }
