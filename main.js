@@ -16,6 +16,12 @@ $(function() {
   $(".mapToggle").click(function(){
     $("#mappop").slideToggle();
   })
+  $(".name").click(function(){
+    $(".about").slideToggle();
+  })
+  $(".about").click(function(){
+    $(".about").slideToggle();
+  })
 });
 
 function dateIdxIsValid(idx) {

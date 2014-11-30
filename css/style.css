@@ -40,7 +40,7 @@ g, circle, img[src*="gstatic"][style*='left: 0px'], img[src*="gstatic"][style*='
   text-decoration: underline;
 }
 
-#overlay {
+#overlay, .about {
 	background-color: rgba(0,0,0,.7);
 	position: absolute;
 	top: 50;
@@ -50,6 +50,10 @@ g, circle, img[src*="gstatic"][style*='left: 0px'], img[src*="gstatic"][style*='
 	z-index: 1;
 	display: block;
 	border-top: 1px solid #000000;
+}
+
+.about {
+	display: none;
 }
 
 #mappop {
