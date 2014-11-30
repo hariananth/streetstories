@@ -1,3 +1,5 @@
+// load map content via sosv
+new SOSV("data/mapInfo.json");
 
 // hold markers so we can always remove them later
 window.currentMarkers = [];
