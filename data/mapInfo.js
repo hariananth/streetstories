@@ -36,7 +36,7 @@ window.mapInfo = [
       },
       {
         "img": "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg",
-        "lat": 38.73893,
+        "lat": 38.73803,
         "lng": -90.273100,
         "title": "Michael Brown Memorial",
         "mtype": window.markerTypes.fam,
