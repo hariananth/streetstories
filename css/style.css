@@ -80,9 +80,11 @@ g, circle, img[src*="gstatic"][style*='left: 0px'], img[src*="gstatic"][style*='
 }
 
 .slider-tweak {
-	font-size: 1.0em;
-	margin-top: 8px;
-	font-weight: bold;
+	font-size: .8em;
+	margin-top: 10px;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 3px;
+	text-transform: uppercase;
 }
 
 .slider-headline {
@@ -163,13 +165,20 @@ li a i {
 	margin-left: 70px;
 }
 
+.top-bar .name h1 {
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+
 .top-bar, .top-bar .name, .top-bar-section ul li, .top-bar-section ul li a {
 	height: 60px;
 	line-height: 60px;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
-	padding-top:5px;
+	padding-top: 5px;
 }
 
 .top-bar-section .has-dropdown > a:after {
