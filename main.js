@@ -1,18 +1,23 @@
-
 // hold markers so we can always remove them later
 window.currentMarkers = [];
 window.currentInfoWindows = [];
 
 // Script for showing / hiding the opening text
 $(function() {
-  $('#overlay').click(function(){
-    $('#overlay').css('display', 'none');
+  $("#overlay").click(function(){
+    $("#overlay").css("display", "none");
   })
-  $(".infoReturn").click(function(){
-    $('#overlay').slideToggle();
+  $("#infoReturn").click(function(){
+    $("#overlay").slideToggle();
   });
-  $(".mapToggle").click(function(){
+  $("#mapToggle").click(function(){
     $("#mappop").slideToggle();
+  })
+  $(".name").click(function(){
+    $(".about").slideToggle();
+  })
+  $(".about").click(function(){
+    $(".about").slideToggle();
   })
 });
 
@@ -36,7 +41,21 @@ function initialize() {
     populateDateSelector();
     // kill infowindows if the user changes positions
     google.maps.event.addListener(window.map, "position_changed", closeInfoWindows);
+    // load a sync'd map into mappop
+    createOverheadMap();
   }
+}
+
+function createOverheadMap() {
+  var mapOptions = {
+    zoom : 18,
+    mapTypeId : google.maps.MapTypeId.ROADMAP
+  };
+  var mapDiv = document.getElementById("mappop");
+  var mapCanvas = new google.maps.Map(mapDiv, mapOptions);
+  mapCanvas.setStreetView(window.map);
+  mapCanvas.bindTo("center", window.map, "position");
+  $("#mapToggle").removeClass("loading");
 }
 
 function populateDateSelector() {
@@ -106,7 +125,7 @@ function addMarker(markerInfo) {
   });
 
   // create associated infowindow
-  var contentString = "<div class='ss-info-window' style='padding: 30px !important'><div class='ss-info-title'>"+markerInfo.title+"</div><div class='ss-info-content "+markerInfo.contentType+"'>"+markerInfo.content+"</div><div class='ss-info-link'><a href='"+markerInfo.link+"'>Read more...</a></div></div>";
+  var contentString = "<div class='ss-info-window' style='padding: 30px !important'><div class='ss-info-headline'>"+markerInfo.headline+"</div><div class='ss-info-content "+markerInfo.contentType+"'>"+markerInfo.content+"</div><div class='ss-info-link'><a href='"+markerInfo.link+"'>Read more...</a></div></div>";
   var markerIW = new google.maps.InfoWindow({
     content: contentString
   });

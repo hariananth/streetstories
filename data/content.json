@@ -7,7 +7,7 @@
   "sounds": [
     {
       "name": "accordion",
-      "lat": "38.73833",
+      "lat": "48.73833",
       "lng": "-90.273545",
       "src": [
         "audio/accordian.mp3"
@@ -17,7 +17,7 @@
     },
     {
       "name": "church-bell-2",
-      "lat": "38.73833",
+      "lat": "48.73833",
       "lng": "-90.273545",
       "src": [
         "audio/church-bell.mp3"
