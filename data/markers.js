@@ -1,4 +1,4 @@
-var content = [
+var mapInfo = [
   {
     "date": "08/09/2014",
     "lat": 38.73847,

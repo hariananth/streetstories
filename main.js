@@ -1,40 +1,23 @@
-$(function() {
-  new SOSV("data/content.json");
-});
+// load map content via sosv
+new SOSV("data/content.json");
 
-/*
+// initialize markers
 function initialize() {
   // error checking
-  if (typeof(content) === "undefined" || content === null) {
-    console.warn("Unable to load content.");
+  if (typeof(mapInfo) === "undefined" || mapInfo === null) {
+    console.error("Unable to load map info.");
     return;
-  } else if (typeof(content.pages) == undefined || content.pages.length == 0) {
-    console.warn("At least one page is required.");
+  } else if (mapInfo.length == 0) {
+    console.warn("No dates provided.");
+  } else {
+    addMarkers(mapInfo[0]);
   }
-
-  // configure map
-  var startingPos = new google.maps.LatLng(content.pages[0].lat, content.pages[0].lng);
-  var mapOptions = {
-    center: startingPos,
-    zoom: 18,
-    streetViewControl: false
-  };
-  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-
-  // set streetview and make visible
-  var panorama = map.getStreetView();
-  panorama.setPosition(murderLocation );
-  panorama.setPov(({
-    heading: 265,
-    pitch: 0
-  }));
-  panorama.setVisible(true);
-
-  // add markers
-  addMarkers(content.pages[0].markers);
 }
 
-function addMarkers(markers) {
+function addMarkers(info) {
+  console.log("adding markers for info:");
+  console.log(info);
+  /*
   var contentString = ""+
     "<iframe width='420' height='315'"+
       "src='http://www.youtube.com/embed/XGSy3_Czz8k'>"+
@@ -58,10 +41,8 @@ function addMarkers(markers) {
     memorialInfo.open(map.getStreetView(), memorialMarker);
     //map.setCenter(marker.getPosition());
   });
+  */
 }
 
 function addMarker(marker) {
 }
-
-google.maps.event.addDomListener(window, "load", initialize);
-*/
