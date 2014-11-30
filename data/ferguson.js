@@ -124,8 +124,8 @@ window.mapInfo = [
   },
   {
     "date": "August 13, 2014",
-    "lat": 38.790223,
-    "lng": -90.303040,
+    "lat": 38.790271,
+    "lng": -90.301486,
     "markers": [
       {
 "date": "August 13, 2014",

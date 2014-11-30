@@ -1,6 +1,7 @@
 // hold markers so we can always remove them later
 window.currentMarkers = [];
 window.currentInfoWindows = [];
+window.overheadIsUnconfigured = true;
 
 // Script for showing / hiding the opening text
 $(function() {
@@ -12,6 +13,10 @@ $(function() {
   });
   $("#mapToggle").click(function(){
     $("#mappop").slideToggle();
+    // hacky af but this is a prototype... right?
+    setTimeout(function() {
+      ensureOverheadConfigured();
+    }, 500);
   })
   $(".name").click(function(){
     $(".about").slideToggle();
@@ -52,15 +57,21 @@ function initialize() {
 }
 
 function createOverheadMap() {
-  var mapCanvas = new google.maps.Map(document.getElementById("mappop"), {
+  window.overheadMap = new google.maps.Map(document.getElementById("mappop"), {
     zoom: 16,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   });
-  mapCanvas.setStreetView(window.map);
-  //mapCanvas.bindTo("center", window.map, "position");
-  //mapCanvas.setCenter(window.map.getPosition());
-  window.test = mapCanvas;
   $("#mapToggle").removeClass("loading");
+}
+
+function ensureOverheadConfigured() {
+  if (window.overheadIsUnconfigured === true) {
+    window.overheadMap.setStreetView(window.map);
+    google.maps.event.trigger(window.overheadMap, "resize");
+    window.overheadMap.setCenter(window.map.getPosition());
+    window.overheadMap.bindTo("center", window.map, "position");
+    window.overheadIsUnconfigured = false;
+  }
 }
 
 function populateDateSelector() {
