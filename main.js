@@ -2,6 +2,17 @@ $(function() {
   new SOSV("data/content.json");
 });
 
+
+//Script for showing / hiding the opening text
+$(function(){
+  $('.intro').click(function(){
+    $('#overlay').css('display', 'none');
+  });
+  $('#info-toggle').click(function(){
+    $('#overlay').slideToggle();
+  });
+});
+
 /*
 function initialize() {
   // error checking
