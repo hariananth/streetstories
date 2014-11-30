@@ -1,3 +1,6 @@
+g, circle, img[src*="gstatic"] {
+  display: none;
+}
 #pano, #pano div, iframe {
   background-color: transparent !important;
   border: 0px !important;
@@ -6,8 +9,12 @@
   -webkit-box-shadow: none !important;
   font-size: 0px !important;
 }
+#pano .ss-info-window {
+  background-color: rgba(0,0,0,0.2) !important;
+}
 #pano .ss-info-title {
   font-size: 20px !important;
+  font-weight: bold;
   color: white;
   text-align: center;
   margin-bottom: 5px !important;
@@ -20,8 +27,13 @@
   max-width: 300px;
   max-height: 300px;
 }
-g, circle, img[src*="gstatic"] {
-  display: none;
+#pano .ss-info-link {
+  display: block;
+  font-size: 20px !important;
+  color: white;
+  text-align: center;
+  margin-top: 5px !important;
+  text-decoration: underline;
 }
 
 #overlay {
