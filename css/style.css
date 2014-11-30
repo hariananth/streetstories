@@ -1,6 +1,9 @@
 g, circle, img[src*="gstatic"][style*='left: 0px'], img[src*="gstatic"][style*='left: -17px'] {
   display: none;
 }
+#pano {
+  height: 100%;
+}
 #pano, #pano div, iframe {
   background-color: transparent !important;
   border: 0px !important;
