@@ -23,13 +23,13 @@
     <!-- <script src="sosv.min.js"></script> -->
     <script src="howler.js"></script>
     <script src="sosv_mod.js"></script>
-    <!-- App JS files -->
-    <script src="main.js"></script>
     <script src="js/custom_panoramas.js"></script>
     <script src="data/mediaincontext.js"></script>
+    <!-- App JS files -->
+    <script src="main.js"></script>
     <script>
       // load map content via sosv
-      new SOSV("data/mapInfo.json");
+      new SOSV("data/media_content.json");
     </script>
 
   </head>
@@ -47,8 +47,6 @@
       </ul>
 
       <section class="top-bar-section">
-        <div class="slider timeline">
-        </div>
       <!-- Right Nav Section -->
         <ul class="right">
           <li class="infoReturn"><a href="#"><i class="fi-info"></i></a></li>
@@ -57,11 +55,10 @@
         <!-- Left Nav Section -->
         <ul class="left">
           <li class="has-dropdown drop-adjust padding-shim">
-            <a href="#">Load current town here</a>
+            <a href="#">Media In Context</a>
             <ul class="dropdown">
               <li><a href="/">Ferguson</a></li>
               <li><a href="#">Doha</a></li>
-              <li><a href="/projects/mediaincontext.html">Media In Context</a></li>
             </ul>
         </ul>
       </section>
