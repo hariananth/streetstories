@@ -272,11 +272,46 @@ window.mapInfo = [
 "date": "August 25, 2014",
 "lat": 38.669221,
 "lng":  -90.273503,
-"headline": "On Augusst 25th, Michael Brown was laid to rest.",
+"headline": "On August 25th, Michael Brown was laid to rest.",
 "type": window.markerTypes.social,
 "contentType": window.infoTypes.picture,
 "link": "",
 "content": "https://c2.staticflickr.com/6/5591/14841313420_6d555fdc4c_b.jpg"
+},
+   {
+    "date": "September 16, 2014",
+    "lat": 38.740754,
+    "lng": -90.303037,
+    "markers": [
+      {
+"date": "September 16, 2014",
+"lat": 38.740754,
+"lng":  -90.303037,
+"headline": "Darren Wilson testifies to the grand jury",
+"type": window.markerTypes.gov,
+"contentType": window.infoTypes.picture,
+"link": "",
+"content": "http://i.imgur.com/UCwPFyG.png"
+},
+      {
+"date": "September 24, 2014",
+"lat": 38.727067,
+"lng":  -90.275085,
+"headline": "Police in St. Louis chastised for wearing 'I am Darren Wilson' bracelets",
+"type": window.markerTypes.news,
+"contentType": window.infoTypes.picture,
+"link": "",
+"content": "https://c4.staticflickr.com/8/7473/15898608581_008aff9942_b.jpg"
+},
+  {
+"date": "September 24, 2014",
+"lat": 38.727067,
+"lng":  -90.275085,
+"headline": "",
+"type": window.markerTypes.news,
+"contentType": window.infoTypes.picture,
+"link": "",
+"content": "http://photos-g.ak.instagram.com/hphotos-ak-xap1/10724032_281371612061454_1935100233_n.jpg"
 },
 ];
 
