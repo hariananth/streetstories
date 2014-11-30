@@ -1,6 +1,9 @@
 g, circle, img[src*="gstatic"][style*='left: 0px'], img[src*="gstatic"][style*='left: -17px'] {
   display: none;
 }
+#pano {
+  height: 100%;
+}
 #pano, #pano div, iframe {
   background-color: transparent !important;
   border: 0px !important;
@@ -77,8 +80,23 @@ g, circle, img[src*="gstatic"][style*='left: 0px'], img[src*="gstatic"][style*='
 }
 
 .slider-tweak {
-	font-size: 1em;
-	margin-top: 15px;
+	font-size: 1.0em;
+	margin-top: 8px;
+	font-weight: bold;
+}
+
+.slider-headline {
+	font-size: .8em;
+	margin-top: -8px;
+	padding-top: 0px;
+}
+
+.slick-next {
+	right: -35px;
+}
+
+.slick-prev {
+	left: -35px;
 }
 
 .timeline div {

@@ -94,7 +94,8 @@ function populateDateSelector() {
 
     $.each( window.mapInfo, function( index, value ){
       console.log(value.date);
-      var link_date = '<div><h3 class="text-center slider-tweak">'+value.date+'</h3></div>';
+      var link_date = 
+      '<div><h3 class="text-center slider-tweak">'+value.date+'</h3><p class="text-center slider-headline">test</p></div>';
       $('.timeline').slickAdd(link_date)
     });
  
