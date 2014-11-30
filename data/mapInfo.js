@@ -1,7 +1,14 @@
-window.types = {
-  "picture": "type-picture",
-  "video": "type-video"
-}
+window.markerTypes = {
+  "family": "marker-fam",
+  "gov":    "marker-gov",
+  "news":   "marker-news",
+  "social": "marker-soc"
+};
+window.infoTypes = {
+  "picture": "info-picture",
+  "video":   "info-video",
+  "tweet":   "info-tweet"
+};
 
 window.mapInfo = [
   {
@@ -14,16 +21,27 @@ window.mapInfo = [
         "lat": 38.73833,
         "lng": -90.273100,
         "title": "Michael Brown Memorial",
-        "type": window.types.video,
-        "content": "<iframe width='420' height='315' src='http://www.youtube.com/embed/XGSy3_Czz8k'></iframe>"
+        "mtype": window.markerTypes.gov,
+        "itype": window.infoTypes.video,
+        "content": "<iframe width='420' height='315' src='http://www.youtube.com/embed/zUXqPDT8hr4?autoplay=1'></iframe>"
       },
       {
         "img": "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg",
         "lat": 38.73783,
         "lng": -90.273200,
         "title": "Some guy named Ferguson",
-        "type": window.types.picture,
-        "content": "<img src='https://lh4.googleusercontent.com/-hKFnsGwhjV0/AAAAAAAAAAI/AAAAAAAAZW0/OhG9c4xtWck/photo.jpg' />"
+        "mtype": window.markerTypes.social,
+        "itype": window.infoTypes.tweet,
+        "content": "<blockquote class='twitter-tweet' lang='en'><p>Breaking News: No Indictment of Officer in Ferguson Case&#10;<a href='http://t.co/8f1zBwGHbV'>http://t.co/8f1zBwGHbV</a></p>&mdash; The New York Times (@nytimes) <a href='https://twitter.com/nytimes/status/537070083982753792'>November 25, 2014</a></blockquote><script async src='//platform.twitter.com/widgets.js' charset='utf-8'></script>"
+      },
+      {
+        "img": "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg",
+        "lat": 38.73893,
+        "lng": -90.273100,
+        "title": "Michael Brown Memorial",
+        "mtype": window.markerTypes.fam,
+        "itype": window.infoTypes.picture,
+        "content": "<img src='https://c2.staticflickr.com/6/5591/14841313420_6d555fdc4c_b.jpg' />"
       }
     ]
   },

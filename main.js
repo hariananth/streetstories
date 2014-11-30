@@ -92,7 +92,7 @@ function addMarker(markerInfo) {
   });
 
   // create associated infowindow
-  var contentString = "<div class='ss-info-window "+markerInfo.type+"'>"+markerInfo.content+"</div>";
+  var contentString = "<div class='ss-info-window "+markerInfo.mtype+" "+markerInfo.itype+"'>"+markerInfo.content+"</div>";
   var markerIW = new google.maps.InfoWindow({
     content: contentString
   });
