@@ -12,7 +12,7 @@ window.infoTypes = {
 
 window.mapInfo = [
   {
-    "date": "August 9th",
+    "date": "August 9th-10th",
     "lat": 38.738312, // first lat-long is actually set by sosv (content.json)
     "lng": -90.273611, // so these aren't used
     "markers": [
@@ -26,6 +26,26 @@ window.mapInfo = [
         "link": "",
         "content": "6SGkD6CN0mk"
       },
+        {
+"date": "August 10, 2014",
+"lat": 38.743812,
+"lng": -90.279095,
+"headline": "",
+"type": window.markerTypes.family,
+"contentType": window.infoTypes.picture,
+"link": "",
+"content": "http://scontent-a-ams.cdninstagram.com/hphotos-xpf1/l/t51.2885-15/1738085_692070914213393_1197767717_n.jpg"
+},
+ {
+"date": "August 10, 2014",
+"lat": 38.740877,
+"lng": -90.303086,
+"headline": "",
+"type": window.markerTypes.gov,
+"contentType": window.infoTypes.video,
+"link": "",
+"content": "zUXqPDT8hr4"
+},
     ]
   },
   {
