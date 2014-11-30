@@ -1,26 +1,34 @@
 // load map content via sosv
 new SOSV("data/content.json");
 
+// hold markers so we can always remove them later
+window.currentMarkers = [];
+
 // Script for showing / hiding the opening text
-$(function(){
-  $('.intro').click(function(){
-    $('#overlay').css('display', 'none');
+$(function() {
+  $(".intro").click(function() {
+    $("#overlay").css("display", "none");
   });
-  $('#info-toggle').click(function(){
-    $('#overlay').slideToggle();
+  $("#info-toggle").click(function() {
+    $("#overlay").slideToggle();
   });
 });
 
-function initialize() {
-  // error checking
-  if (typeof(mapInfo) === "undefined" || mapInfo === null) {
+function dateIdxIsValid(idx) {
+  if (typeof(window.mapInfo) === "undefined" || window.mapInfo === null) {
     console.error("Unable to load map info.");
-    return;
-  } else if (mapInfo.length == 0) {
-    console.warn("No dates provided.");
-  } else {
-    // we don't need to set the location, just add the markers
-    addMarkers(mapInfo[0]);
+    return false;
+  } else if (idx >= window.mapInfo.length) {
+    console.error("No date for index", idx);
+    return false;
+  }
+  return true
+}
+
+function initialize() {
+  if (dateIdxIsValid(0)) {
+    // add markers for starting location
+    addMarkers(window.mapInfo[0]);
   }
 }
 
@@ -53,4 +61,22 @@ function addMarker(marker) {
     markerInfo.open(window.map, marker);
     //map.setCenter(marker.getPosition());
   });
+
+  window.currentMarkers.push(marker);
+}
+
+// helper function to move map to location of date and add markers
+function setDate(dateIdx) {
+  if (dateIdxIsValid(dateIdx)) {
+    var newInfo = window.mapInfo[dateIdx];
+    // remove old markers
+    while(window.currentMarkers.length > 0) {
+      window.currentMarkers.pop().setMap(null);
+    }
+    // set new location
+    var newCenter = new google.maps.LatLng(newInfo.lat, newInfo.lng);
+    window.map.setPosition(newCenter);
+    // add new markers
+    addMarkers(newInfo);
+  }
 }
