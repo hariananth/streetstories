@@ -4,10 +4,10 @@
   padding: 0px !important;
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
+  font-size: 0px !important;
 }
-
 #pano .ss-info-title {
-  font-size: 20px;
+  font-size: 20px !important;
   color: white;
   text-align: center;
   margin-bottom: 5px !important;
@@ -19,6 +19,9 @@
 #pano .ss-info-content.info-picture {
   max-width: 300px;
   max-height: 300px;
+}
+g, circle, img[src*="gstatic"] {
+  display: none;
 }
 
 #overlay {
