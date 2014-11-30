@@ -198,7 +198,7 @@ li a i {
 	position: absolute;
 	background-position: 0 -13px;
 	background-size: 90%;
-	background-image: url('/img/streetstories2.png');
+	background-image: url('../img/streetstories2.png');
 }
 
 .middle {
