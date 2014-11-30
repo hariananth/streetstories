@@ -17,38 +17,15 @@ window.mapInfo = [
     "lng": -90.273611, // so these aren't used
     "markers": [
       {
-        "date": "",
-        "img": "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg",
-        "lat": 38.73833,
-        "lng": -90.273100,
-        "title": "Michael Brown Memorial",
-        "mtype": window.markerTypes.gov,
-        "itype": window.infoTypes.video,
-        "link": "http://youtube.com/here/is/the/video",
-        "content": "<iframe width='420' height='315' src='http://www.youtube.com/embed/zUXqPDT8hr4?autoplay=1'></iframe>"
+        "date": "August 9, 2014",
+        "lat": 38.739332,
+        "lng": -90.273152,
+        "headline": "",
+        "type": window.markerTypes.news,
+        "contentType": window.infoTypes.video,
+        "link": "",
+        "content": "<iframe width='560' height='315' src='http://www.youtube.com/embed/6SGkD6CN0mk?autoplay=1'></iframe>"
       },
-      {
-        "date": "",
-        "img": 'http://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=cafe|FFFF00',
-        "lat": 38.73783,
-        "lng": -90.273200,
-        "title": "Some guy named Ferguson",
-        "mtype": window.markerTypes.social,
-        "itype": window.infoTypes.tweet,
-        "link": "http://cnn.com/here/is/the/tweet",
-        "content": "<blockquote class='twitter-tweet' lang='en'><p>Breaking News: No Indictment of Officer in Ferguson Case&#10;<a href='http://t.co/8f1zBwGHbV'>http://t.co/8f1zBwGHbV</a></p>&mdash; The New York Times (@nytimes) <a href='https://twitter.com/nytimes/status/537070083982753792'>November 25, 2014</a></blockquote><script async src='//platform.twitter.com/widgets.js' charset='utf-8'></script>"
-      },
-      {
-        "date": "",
-        "img": "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg",
-        "lat": 38.73803,
-        "lng": -90.273100,
-        "title": "Michael Brown Memorial",
-        "mtype": window.markerTypes.family,
-        "itype": window.infoTypes.picture,
-        "link": "http://bbc.co.uk/here/is/the/story",
-        "content": "<img src='https://c2.staticflickr.com/6/5591/14841313420_6d555fdc4c_b.jpg' />"
-      }
     ]
   },
   {

@@ -87,15 +87,25 @@ function addMarkers(info) {
 function addMarker(markerInfo) {
   // create marker
   var markerPos = new google.maps.LatLng(markerInfo.lat, markerInfo.lng);
+  var markerImg = "";
+  if (markerInfo.type === window.markerTypes.family) {
+    markerImg = "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg";
+  } else if (markerInfo.type === window.markerTypes.gov) {
+    markerImg = "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg";
+  } else if (markerInfo.type === window.markerTypes.news) {
+    markerImg = "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg";
+  } else if (markerInfo.type === window.markerTypes.social) {
+    markerImg = "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg";
+  }
   var marker = new google.maps.Marker({
     position: markerPos,
     map: window.map,
-    icon: markerInfo.img,
+    icon: markerImg,
     title: markerInfo.title
   });
 
   // create associated infowindow
-  var contentString = "<div class='ss-info-window' style='padding: 30px !important'><div class='ss-info-title'>"+markerInfo.title+"</div><div class='ss-info-content "+markerInfo.itype+"'>"+markerInfo.content+"</div><div class='ss-info-link'><a href='"+markerInfo.link+"'>Read more...</a></div></div>";
+  var contentString = "<div class='ss-info-window' style='padding: 30px !important'><div class='ss-info-title'>"+markerInfo.title+"</div><div class='ss-info-content "+markerInfo.contentType+"'>"+markerInfo.content+"</div><div class='ss-info-link'><a href='"+markerInfo.link+"'>Read more...</a></div></div>";
   var markerIW = new google.maps.InfoWindow({
     content: contentString
   });
