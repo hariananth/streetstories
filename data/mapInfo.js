@@ -20,6 +20,16 @@ window.mapInfo = [
         "date": "August 9, 2014",
         "lat": 38.739332,
         "lng": -90.273152,
+        "headline": "On August 9th, 18-year-old Michael Brown was shot and killed",
+        "type": window.markerTypes.news,
+        "contentType": window.infoTypes.video,
+        "link": "",
+        "content": "6SGkD6CN0mk"
+      },
+      {
+        "date": "August 9, 2014",
+        "lat": 38.739332,
+        "lng": -90.273152,
         "headline": "",
         "type": window.markerTypes.news,
         "contentType": window.infoTypes.video,
