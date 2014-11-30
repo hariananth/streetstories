@@ -27,7 +27,7 @@ window.mapInfo = [
         "content": "<iframe width='420' height='315' src='http://www.youtube.com/embed/zUXqPDT8hr4?autoplay=1'></iframe>"
       },
       {
-        "img": "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg",
+        "img": 'http://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=cafe|FFFF00',
         "lat": 38.73783,
         "lng": -90.273200,
         "title": "Some guy named Ferguson",
