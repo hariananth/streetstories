@@ -30,7 +30,12 @@ function initialize() {
     // add markers for starting location
     addMarkers(window.mapInfo[0]);
   }
+
 }
+
+
+
+
 
 function addMarkers(info) {
   if (window.map !== null &&
