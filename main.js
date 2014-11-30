@@ -1,7 +1,16 @@
 // load map content via sosv
 new SOSV("data/content.json");
 
-// initialize markers
+// Script for showing / hiding the opening text
+$(function(){
+  $('.intro').click(function(){
+    $('#overlay').css('display', 'none');
+  });
+  $('#info-toggle').click(function(){
+    $('#overlay').slideToggle();
+  });
+});
+
 function initialize() {
   // error checking
   if (typeof(mapInfo) === "undefined" || mapInfo === null) {
