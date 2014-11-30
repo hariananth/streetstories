@@ -12,7 +12,7 @@ window.infoTypes = {
 
 window.mapInfo = [
   {
-    "date": "08/09/2014",
+    "date": "August 9th",
     "lat": 38.738312, // first lat-long is actually set by sosv (content.json)
     "lng": -90.273611, // so these aren't used
     "markers": [
@@ -46,10 +46,33 @@ window.mapInfo = [
     ]
   },
   {
-    "date": "08/10/2014",
+    "date": "August 10th",
+    "lat": 38.73857,
+    "lng": -90.27387,
+    "markers": [
+    ]
+  },
+  {
+    "date": "August 15th",
+    "lat": 38.73857,
+    "lng": -90.27387,
+    "markers": [
+    ]
+  },
+  {
+    "date": "August 20th",
+    "lat": 38.73857,
+    "lng": -90.27387,
+    "markers": [
+    ]
+  },
+  {
+    "date": "August 25th",
     "lat": 38.73857,
     "lng": -90.27387,
     "markers": [
     ]
   }
+
+
 ];

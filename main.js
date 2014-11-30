@@ -41,7 +41,7 @@ function populateDateSelector() {
     $('.timeline').slick({
       slidesToShow: window.mapInfo.length,
       arrows: true,
-      dots: true,
+      dots: false,
       focusOnSelect: true,
       draggable: true,
       infinite: true,
@@ -117,7 +117,6 @@ function modifyInfoWindows() {
   try {
     var thisNode = iterator.iterateNext();
     while (thisNode) {
-      console.log(thisNode);
       thisNode = iterator.iterateNext();
     }
   } catch (e) {
