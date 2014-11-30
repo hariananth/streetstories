@@ -1,3 +1,8 @@
+#pano, #pano div {
+  background-color: transparent !important;
+  border: 0px !important;
+}
+
 #overlay {
 	background-color: rgba(0,0,0,.7);
 	position: absolute;
@@ -85,4 +90,3 @@ li a i {
 	background-color: #ccc;
 	width: 200px;
 }
-
