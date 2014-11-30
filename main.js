@@ -19,41 +19,38 @@ function initialize() {
   } else if (mapInfo.length == 0) {
     console.warn("No dates provided.");
   } else {
+    // we don't need to set the location, just add the markers
     addMarkers(mapInfo[0]);
   }
 }
 
 function addMarkers(info) {
-  for (var i=0; i<info.length; i++) {
-    console.log("adding marker:");
-    console.log(info[i]);
+  if (window.map !== null &&
+      typeof(info.markers) !== undefined &&
+      info.markers !== null &&
+      info.markers.length > 0) {
+    for (var i=0; i<info.markers.length; i++) {
+      addMarker(info.markers[i]);
+    }
   }
-  /*
-  var contentString = ""+
-    "<iframe width='420' height='315'"+
-      "src='http://www.youtube.com/embed/XGSy3_Czz8k'>"+
-    "</iframe>";
-
-  var memorialInfo = new google.maps.InfoWindow({
-    content: contentString
-  });
-
-  var memorial = new google.maps.LatLng(38.73833,-90.273545);
-
-  // Setup the markers on the map
-  var memorialMarker = new google.maps.Marker({
-    position: memorial,
-    map: map,
-    icon: "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg",
-    title: "Michael Brown Memorial"
-  });
-
-  google.maps.event.addListener(memorialMarker, "click", function() {
-    memorialInfo.open(map.getStreetView(), memorialMarker);
-    //map.setCenter(marker.getPosition());
-  });
-  */
 }
 
 function addMarker(marker) {
+  var markerInfo = new google.maps.InfoWindow({
+    content: marker.content
+  });
+  var markerPos = new google.maps.LatLng(marker.lat, marker.lng);
+
+  // Setup the markers on the map
+  var marker = new google.maps.Marker({
+    position: markerPos,
+    map: window.map,
+    icon: marker.img,
+    title: marker.title
+  });
+
+  google.maps.event.addListener(marker, "click", function() {
+    markerInfo.open(window.map, marker);
+    //map.setCenter(marker.getPosition());
+  });
 }

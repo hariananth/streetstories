@@ -1,7 +1,7 @@
 var mapInfo = [
   {
     "date": "08/09/2014",
-    "lat": 38.73847,
+    "lat": 38.73847, // first lat-long is actually set by sosv (content.json)
     "lng": -90.27387,
     "markers": [
       {
