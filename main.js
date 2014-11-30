@@ -4,11 +4,11 @@ window.currentInfoWindows = [];
 
 // Script for showing / hiding the opening text
 $(function() {
-  $('#overlay').click(function(){
-    $('#overlay').css('display', 'none');
+  $("#overlay").click(function(){
+    $("#overlay").css("display", "none");
   })
   $(".infoReturn").click(function(){
-    $('#overlay').slideToggle();
+    $("#overlay").slideToggle();
   });
   $(".mapToggle").click(function(){
     $("#mappop").slideToggle();
