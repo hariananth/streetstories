@@ -7,12 +7,15 @@ window.currentInfoWindows = [];
 
 // Script for showing / hiding the opening text
 $(function() {
-  $(".intro").click(function() {
-    $("#overlay").css("display", "none");
+  $('#overlay').click(function(){
+    $('#overlay').css('display', 'none');
+  })
+  $(".infoReturn").click(function(){
+    $('#overlay').slideToggle();
   });
-  $("#info-toggle").click(function() {
-    $("#overlay").slideToggle();
-  });
+  $(".mapToggle").click(function(){
+    $("#mappop").slideToggle();
+  })
 });
 
 function dateIdxIsValid(idx) {
