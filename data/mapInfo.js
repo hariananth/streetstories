@@ -12,7 +12,7 @@ window.infoTypes = {
 
 window.mapInfo = [
   {
-    "date": "August 9th-10th",
+    "date": "August 9-10, 2014",
     "lat": 38.738312, // first lat-long is actually set by sosv (content.json)
     "lng": -90.273611, // so these aren't used
     "markers": [
@@ -49,12 +49,12 @@ window.mapInfo = [
     ]
   },
   {
-    "date": "August 11th",
+    "date": "August 11, 2014",
     "lat": 38.749613,
     "lng": -90.279912,
     "markers": [
       {
-"date": "August 11th",
+"date": "August 11, 2014",
 "lat": 338.749613
 "lng": -90.279912,
 "headline": "Protests continue two days after Michael Brown's death",
@@ -64,12 +64,22 @@ window.mapInfo = [
 "content": "https://c4.staticflickr.com/4/3860/14794832317_db2b6eeb98_b.jpg"
 },
     {
-"date": "August 10, 2014",
-"lat": 38.740877,
-"lng": -90.303086,
+"date": "August 11, 2014",
+"lat": 38.749613,
+"lng": -90.279912,
 "headline": "",
-"type": window.markerTypes.gov,
-"contentType": window.infoTypes.video,
+"type": window.markerTypes.social,
+"contentType": window.infoTypes.picture,
+"link": "",
+"content": "zUXqPDT8hr4"
+},
+   {
+"date": "August 11, 2014",
+"lat": 38.749613,
+"lng": -90.279912,
+"headline": "",
+"type": window.markerTypes.social,
+"contentType": window.infoTypes.picture,
 "link": "",
 "content": "zUXqPDT8hr4"
 },
