@@ -1,67 +1,83 @@
+// load map content via sosv
+new SOSV("data/content.json");
+
+// hold markers so we can always remove them later
+window.currentMarkers = [];
+
+// Script for showing / hiding the opening text
 $(function() {
-  new SOSV("data/content.json");
+  $(".intro").click(function() {
+    $("#overlay").css("display", "none");
+  });
+  $("#info-toggle").click(function() {
+    $("#overlay").slideToggle();
+  });
 });
 
-/*
-function initialize() {
-  // error checking
-  if (typeof(content) === "undefined" || content === null) {
-    console.warn("Unable to load content.");
-    return;
-  } else if (typeof(content.pages) == undefined || content.pages.length == 0) {
-    console.warn("At least one page is required.");
+function dateIdxIsValid(idx) {
+  if (typeof(window.mapInfo) === "undefined" || window.mapInfo === null) {
+    console.error("Unable to load map info.");
+    return false;
+  } else if (idx >= window.mapInfo.length) {
+    console.error("No date for index", idx);
+    return false;
   }
-
-  // configure map
-  var startingPos = new google.maps.LatLng(content.pages[0].lat, content.pages[0].lng);
-  var mapOptions = {
-    center: startingPos,
-    zoom: 18,
-    streetViewControl: false
-  };
-  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-
-  // set streetview and make visible
-  var panorama = map.getStreetView();
-  panorama.setPosition(murderLocation );
-  panorama.setPov(({
-    heading: 265,
-    pitch: 0
-  }));
-  panorama.setVisible(true);
-
-  // add markers
-  addMarkers(content.pages[0].markers);
+  return true
 }
 
-function addMarkers(markers) {
-  var contentString = ""+
-    "<iframe width='420' height='315'"+
-      "src='http://www.youtube.com/embed/XGSy3_Czz8k'>"+
-    "</iframe>";
+function initialize() {
+  if (dateIdxIsValid(0)) {
+    // add markers for starting location
+    addMarkers(window.mapInfo[0]);
+  }
 
-  var memorialInfo = new google.maps.InfoWindow({
-    content: contentString
-  });
+}
 
-  var memorial = new google.maps.LatLng(38.73833,-90.273545);
-
-  // Setup the markers on the map
-  var memorialMarker = new google.maps.Marker({
-    position: memorial,
-    map: map,
-    icon: "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg",
-    title: "Michael Brown Memorial"
-  });
-
-  google.maps.event.addListener(memorialMarker, "click", function() {
-    memorialInfo.open(map.getStreetView(), memorialMarker);
-    //map.setCenter(marker.getPosition());
-  });
+function addMarkers(info) {
+  if (window.map !== null &&
+      typeof(info.markers) !== undefined &&
+      info.markers !== null &&
+      info.markers.length > 0) {
+    for (var i=0; i<info.markers.length; i++) {
+      addMarker(info.markers[i]);
+    }
+  }
 }
 
 function addMarker(marker) {
+  var markerInfo = new google.maps.InfoWindow({
+    content: marker.content
+  });
+  var markerPos = new google.maps.LatLng(marker.lat, marker.lng);
+
+  // Setup the markers on the map
+  var marker = new google.maps.Marker({
+    position: markerPos,
+    map: window.map,
+    icon: marker.img,
+    title: marker.title
+  });
+
+  google.maps.event.addListener(marker, "click", function() {
+    markerInfo.open(window.map, marker);
+    //map.setCenter(marker.getPosition());
+  });
+
+  window.currentMarkers.push(marker);
 }
 
-google.maps.event.addDomListener(window, "load", initialize);
-*/
+// helper function to move map to location of date and add markers
+function setDate(dateIdx) {
+  if (dateIdxIsValid(dateIdx)) {
+    var newInfo = window.mapInfo[dateIdx];
+    // remove old markers
+    while(window.currentMarkers.length > 0) {
+      window.currentMarkers.pop().setMap(null);
+    }
+    // set new location
+    var newCenter = new google.maps.LatLng(newInfo.lat, newInfo.lng);
+    window.map.setPosition(newCenter);
+    // add new markers
+    addMarkers(newInfo);
+  }
+}

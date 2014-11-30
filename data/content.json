@@ -5,24 +5,25 @@
   "heading": "60",
   "pitch": "1",
   "sounds": [
-  {
-    "name": "accordion",
-    "lat": "38.73833",
-    "lng": "-90.273545",
-    "src": [
-      "qudio/accordian.mp3"
-    ],
-    "db": "80",
-    "pause": "0"
-  },
-  {
-    "name": "church-bell-2",
-    "lat": "38.73833",
-    "lng": "-90.273545",
-    "src": [
-      "qudio/church-bell.mp3"
-    ],
-    "db": "100",
-    "pause": "0"
-  }]
+    {
+      "name": "accordion",
+      "lat": "38.73833",
+      "lng": "-90.273545",
+      "src": [
+        "audio/accordian.mp3"
+      ],
+      "db": "80",
+      "pause": "0"
+    },
+    {
+      "name": "church-bell-2",
+      "lat": "38.73833",
+      "lng": "-90.273545",
+      "src": [
+        "audio/church-bell.mp3"
+      ],
+      "db": "100",
+      "pause": "0"
+    }
+  ]
 }

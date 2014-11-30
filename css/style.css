@@ -80,3 +80,9 @@ li a i {
 	margin-top: 3px;
 }
 
+.timeline div {
+	height: 60px;
+	background-color: #ccc;
+	width: 200px;
+}
+

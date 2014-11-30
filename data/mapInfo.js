@@ -1,6 +1,7 @@
-var content = {
-  "08,09,2014": [
-    "lat": 38.73847,
+window.mapInfo = [
+  {
+    "date": "08/09/2014",
+    "lat": 38.73847, // first lat-long is actually set by sosv (content.json)
     "lng": -90.27387,
     "markers": [
       {
@@ -14,9 +15,10 @@ var content = {
           "</iframe>",
       }
     ]
-  ],
-  "08,10,2014": [
-    "lat": 38.73847,
+  },
+  {
+    "date": "08/10/2014",
+    "lat": 38.73857,
     "lng": -90.27387,
     "markers": [
       {
@@ -30,8 +32,5 @@ var content = {
           "</iframe>",
       }
     ]
-  ]
-
-
-
-}
+  }
+]

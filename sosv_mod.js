@@ -34,7 +34,10 @@ var Sound = function(json, panorama, _sosv){
   var obj   = this;
   this.sosv   = _sosv;
   this.data   = json;      // JSON data associated with this sound
-  window.map   = panorama;    // Street view pano we are working with
+  if (window.map == null) {
+    window.map   = panorama;    // Street view pano we are working with
+    initialize();
+  }
     
   this.sound   = null;      // Howler object
   this.vol   = 0;      // Volume of sound    
@@ -198,7 +201,7 @@ var Sound = function(json, panorama, _sosv){
   this.init();
 }
 
-var SOSV = function(jsonPath){
+var SOSV = function(jsonPath) {
   
   var self = this,
     el,
