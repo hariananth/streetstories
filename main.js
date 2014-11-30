@@ -24,8 +24,10 @@ function initialize() {
 }
 
 function addMarkers(info) {
-  console.log("adding markers for info:");
-  console.log(info);
+  for (var i=0; i<info.length; i++) {
+    console.log("adding marker:");
+    console.log(info[i]);
+  }
   /*
   var contentString = ""+
     "<iframe width='420' height='315'"+
