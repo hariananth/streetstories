@@ -1,5 +1,3 @@
-// load map content via sosv
-new SOSV("data/content.json");
 
 // hold markers so we can always remove them later
 window.currentMarkers = [];
