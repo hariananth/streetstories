@@ -47,14 +47,14 @@ function initialize() {
 }
 
 function createOverheadMap() {
-  var mapOptions = {
-    zoom : 18,
-    mapTypeId : google.maps.MapTypeId.ROADMAP
-  };
-  var mapDiv = document.getElementById("mappop");
-  var mapCanvas = new google.maps.Map(mapDiv, mapOptions);
+  var mapCanvas = new google.maps.Map(document.getElementById("mappop"), {
+    zoom: 16,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  });
   mapCanvas.setStreetView(window.map);
-  mapCanvas.bindTo("center", window.map, "position");
+  //mapCanvas.bindTo("center", window.map, "position");
+  //mapCanvas.setCenter(window.map.getPosition());
+  window.test = mapCanvas;
   $("#mapToggle").removeClass("loading");
 }
 

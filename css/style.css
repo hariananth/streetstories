@@ -39,6 +39,9 @@ g, circle, img[src*="gstatic"][style*='left: 0px'], img[src*="gstatic"][style*='
   margin-top: 5px !important;
   text-decoration: underline;
 }
+.loading {
+  opacity: 0.3;
+}
 
 #overlay, .about {
 	background-color: rgba(0,0,0,.7);
@@ -64,9 +67,6 @@ g, circle, img[src*="gstatic"][style*='left: 0px'], img[src*="gstatic"][style*='
 	top: 80px;
 	right: 20px;
 	z-index: 2;
-}
-#mapToggle.loading {
-  opacity: 0.3;
 }
 
 .intro {
