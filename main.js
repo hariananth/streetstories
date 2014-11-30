@@ -39,7 +39,8 @@ function populateDateSelector() {
   $(document).ready(function(){
     //slideIndex=0;
     $('.timeline').slick({
-      slidesToShow: window.mapInfo.length,
+      slidesToShow: 5, //window.mapInfo.length,
+      slidesToScroll: 5,
       arrows: true,
       dots: false,
       focusOnSelect: true,
