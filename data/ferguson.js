@@ -123,10 +123,40 @@ window.mapInfo = [
     ]
   },
   {
-    "date": "August 20th",
-    "lat": 38.73857,
-    "lng": -90.27387,
+    "date": "August 13, 2014",
+    "lat": 38.790223,
+    "lng": -90.303040,
     "markers": [
+      {
+"date": "August 13, 2014",
+"lat": 38.790223,
+"lng":  -90.303040,
+"headline": "",
+"type": window.markerTypes.news,
+"contentType": window.infoTypes.video,
+"link": "",
+"content": "oTUqOBJsRdg"
+},
+{
+"date": "August 13, 2014",
+"lat": 38.790223,
+"lng":  -90.303040,
+"headline": "First day of school in Ferguson-Florissant school district pushed back",
+"type": window.markerTypes.gov,
+"contentType": window.infoTypes.picture,
+"link": "",
+"content": "http://i.imgur.com/AZ07MfO.png"
+},
+{
+"date": "August 13, 2014",
+"lat": 38.735419,
+"lng":  -90.278376,
+"headline": "Two reporters detained by police at McDonald's",
+"type": window.markerTypes.news,
+"contentType": window.infoTypes.video,
+"link": "",
+"content": "I6xmvDYCgKA"
+},
     ]
   },
   {
