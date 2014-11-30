@@ -26,9 +26,9 @@ window.mapInfo = [
         "link": "",
         "content": "6SGkD6CN0mk"
       },
-        {
-"date": "August 10, 2014",
-"lat": 38.743812,
+      {
+        "date": "August 10, 2014",
+        "lat": 38.743812,
 "lng": -90.279095,
 "headline": "",
 "type": window.markerTypes.family,
@@ -36,7 +36,7 @@ window.mapInfo = [
 "link": "",
 "content": "http://scontent-a-ams.cdninstagram.com/hphotos-xpf1/l/t51.2885-15/1738085_692070914213393_1197767717_n.jpg"
 },
- {
+      {
 "date": "August 10, 2014",
 "lat": 38.740877,
 "lng": -90.303086,
@@ -63,7 +63,7 @@ window.mapInfo = [
 "link": "",
 "content": "https://c4.staticflickr.com/4/3860/14794832317_db2b6eeb98_b.jpg"
 },
-    {
+      {
 "date": "August 11, 2014",
 "lat": 38.749613,
 "lng": -90.279912,
@@ -73,7 +73,7 @@ window.mapInfo = [
 "link": "",
 "content": "http://i.imgur.com/6kah8zq.png"
 },
-   {
+      {
 "date": "August 11, 2014",
 "lat": 38.735419,
 "lng": -90.278376,
@@ -100,7 +100,7 @@ window.mapInfo = [
 "link": "",
 "content": "<blockquote class='twitter-tweet' lang='en'><p>love this &lt;3 RT <a href='https://twitter.com/stevenjhsieh'>@stevenjhsieh</a>: Man waving a Palestinian flag in <a href='https://twitter.com/hashtag/Ferguson?src=hash'>#Ferguson</a> &quot;because they supported St. Louis.&quot; <a href='http://t.co/tn96pvFEXF'>pic.twitter.com/tn96pvFEXF</a></p>&mdash; Grim_Chickn (@grm_chikn) <a href='https://twitter.com/grm_chikn/status/500793766081744896'>August 16, 2014</a></blockquote><script async src='//platform.twitter.com/widgets.js' charset='utf-8'></script>"
 },
-{
+      {
 "date": "August 12, 2014",
 "lat": 38.648863,
 "lng": -90.338427,
@@ -110,7 +110,7 @@ window.mapInfo = [
 "link": "",
 "content": "http://i.imgur.com/LsA3JUc.png"
 },
-{
+      {
 "date": "August 12, 2014",
 "lat": 38.738455,
 "lng":  -90.277542,
@@ -137,7 +137,7 @@ window.mapInfo = [
 "link": "",
 "content": "oTUqOBJsRdg"
 },
-{
+      {
 "date": "August 13, 2014",
 "lat": 38.790223,
 "lng":  -90.303040,
@@ -147,7 +147,7 @@ window.mapInfo = [
 "link": "",
 "content": "http://i.imgur.com/AZ07MfO.png"
 },
-{
+      {
 "date": "August 13, 2014",
 "lat": 38.735419,
 "lng":  -90.278376,
@@ -174,7 +174,7 @@ window.mapInfo = [
 "link": "",
 "content": "94SSU0CRg24"
 },
-{
+      {
 "date": "August 14, 2014",
 "lat": 38.741005,
 "lng":  -90.303095,
@@ -184,7 +184,7 @@ window.mapInfo = [
 "link": "",
 "content": "http://i.imgur.com/z761i8E.png"
 },
-{
+      {
 "date": "August 14, 2014",
 "lat": 38.637342,
 "lng":  -90.234959,
@@ -194,7 +194,7 @@ window.mapInfo = [
 "link": "",
 "content": "http://i.imgur.com/4GLvlAB.png"
 },
-{
+      {
 "date": "August 14, 2014",
 "lat": 38.637342,
 "lng":  -90.234959,
@@ -205,6 +205,54 @@ window.mapInfo = [
 "content": "https://c1.staticflickr.com/9/8662/15885348561_1cf5208088_c.jpg"
 },
     ]
-  }
+  },
+    {
+    "date": "August 15-18, 2014",
+    "lat": 38.741005,
+    "lng": -90.303095,
+    "markers": [
+      {
+"date": "August 15, 2014",
+"lat": 38.741005,
+"lng":  -90.303095,
+"headline": "",
+"type": window.markerTypes.news,
+"contentType": window.infoTypes.picture,
+"link": "",
+"content": "http://a.abcnews.com/images/US/HT_darren_wilson_float_jef_140819_16x9t_384.jpg"
+},
+      {
+"date": "August 15, 2014",
+"lat": 38.741005,
+"lng":  -90.303095,
+"headline": "",
+"type": window.markerTypes.social,
+"contentType": window.infoTypes.picture,
+"link": "",
+"content": "https://c2.staticflickr.com/6/5558/14978144321_1ff00e4617_b.jpg"
+},
+      {
+"date": "August 16, 2014",
+"lat": 38.710826,
+"lng":  -90.309098,
+"headline": "",
+"type": window.markerTypes.gov,
+"contentType": window.infoTypes.video,
+"link": "",
+"content": "2zspevpRgEU"
+},
+      {
+"date": "August 18, 2014",
+"lat": 38.727067,
+"lng":  -90.275085,
+"headline": "Nixon orders the National Guard into Ferguson",
+"type": window.markerTypes.gov,
+"contentType": window.infoTypes.tweet,
+"link": "",
+"content": '<blockquote class="twitter-tweet" lang="en"><p>You can leave, but you can&#39;t come in ... <a href="https://twitter.com/hashtag/Ferguson?src=hash">#Ferguson</a> <a href="http://t.co/COawreJipm">pic.twitter.com/COawreJipm</a></p>&mdash; David Douglas (@DavidDouglasTV) <a href="https://twitter.com/DavidDouglasTV/status/500792925417377792">August 16, 2014</a></blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>'
+},
+    ]
+  },
 ];
+
 
