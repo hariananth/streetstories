@@ -1,4 +1,3 @@
-
 // hold markers so we can always remove them later
 window.currentMarkers = [];
 window.currentInfoWindows = [];
