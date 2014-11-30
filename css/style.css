@@ -67,3 +67,9 @@ li a i {
 }
 
 
+.timeline div {
+	height: 60px;
+	background-color: #ccc;
+	width: 200px;
+}
+
