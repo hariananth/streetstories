@@ -49,19 +49,19 @@ window.mapInfo = [
     ]
   },
   {
-    "date": "August 10th",
-    "lat": 38.743812,
-    "lng": -90.279095,
+    "date": "August 11th",
+    "lat": 38.749613,
+    "lng": -90.279912,
     "markers": [
       {
-"date": "August 10, 2014",
-"lat": 38.743812,
-"lng": -90.279095,
-"headline": "",
-"type": window.markerTypes.family,
+"date": "August 11th",
+"lat": 338.749613
+"lng": -90.279912,
+"headline": "Protests continue two days after Michael Brown's death",
+"type": window.markerTypes.social,
 "contentType": window.infoTypes.picture,
 "link": "",
-"content": "http://scontent-a-ams.cdninstagram.com/hphotos-xpf1/l/t51.2885-15/1738085_692070914213393_1197767717_n.jpg"
+"content": "https://c4.staticflickr.com/4/3860/14794832317_db2b6eeb98_b.jpg"
 },
     {
 "date": "August 10, 2014",
