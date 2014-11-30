@@ -33,10 +33,6 @@ function initialize() {
 
 }
 
-
-
-
-
 function addMarkers(info) {
   if (window.map !== null &&
       typeof(info.markers) !== undefined &&
