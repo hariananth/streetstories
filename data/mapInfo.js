@@ -75,13 +75,14 @@ window.mapInfo = [
 },
    {
 "date": "August 11, 2014",
-"lat": 38.749613,
-"lng": -90.279912,
+"lat": 38.735419,
+"lng": -90.278376,
 "headline": "",
 "type": window.markerTypes.social,
-"contentType": window.infoTypes.picture,
+"contentType": window.infoTypes.tweet,
 "link": "",
-"content": "zUXqPDT8hr4"
+"content": "<blockquote class="twitter-tweet" lang="en"><p>It&#39;s just past 1 a.m. in <a href="https://twitter.com/hashtag/Ferguson?src=hash">#Ferguson</a>, and this is what we&#39;re seeing <a href="http://t.co/ZiKgGP2TGq">pic.twitter.com/ZiKgGP2TGq</a></p>&mdash; Alan Blinder (@alanblinder) <a href="https://twitter.com/alanblinder/status/500522932914114561">August 16, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>"
 },
     ]
   },
