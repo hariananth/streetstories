@@ -17,6 +17,7 @@ window.mapInfo = [
     "lng": -90.273611, // so these aren't used
     "markers": [
       {
+        "date": "",
         "img": "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg",
         "lat": 38.73833,
         "lng": -90.273100,
@@ -27,6 +28,7 @@ window.mapInfo = [
         "content": "<iframe width='420' height='315' src='http://www.youtube.com/embed/zUXqPDT8hr4?autoplay=1'></iframe>"
       },
       {
+        "date": "",
         "img": 'http://chart.apis.google.com/chart?chst=d_map_pin_icon&chld=cafe|FFFF00',
         "lat": 38.73783,
         "lng": -90.273200,
@@ -37,6 +39,7 @@ window.mapInfo = [
         "content": "<blockquote class='twitter-tweet' lang='en'><p>Breaking News: No Indictment of Officer in Ferguson Case&#10;<a href='http://t.co/8f1zBwGHbV'>http://t.co/8f1zBwGHbV</a></p>&mdash; The New York Times (@nytimes) <a href='https://twitter.com/nytimes/status/537070083982753792'>November 25, 2014</a></blockquote><script async src='//platform.twitter.com/widgets.js' charset='utf-8'></script>"
       },
       {
+        "date": "",
         "img": "http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10755974_611923265600446_759100302_n.jpg",
         "lat": 38.73803,
         "lng": -90.273100,
