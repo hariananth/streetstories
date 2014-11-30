@@ -25,6 +25,16 @@ img {
 	width: 100%;
 	z-index: 1;
 	display: block;
+	border-top: 1px solid #000000;
+}
+
+#mappop {
+	position: absolute;
+	display: none;
+	width: 300px;
+	top: 80px;
+	right: 20px;
+	z-index: 2;
 }
 
 .intro {
@@ -83,6 +93,7 @@ li a i {
 
 .top-bar .name {
 	padding: 5px;
+	margin-left: 70px;
 }
 
 .top-bar, .top-bar .name, .top-bar-section ul li, .top-bar-section ul li a {
@@ -102,4 +113,14 @@ li a i {
 	height: 60px;
 	background-color: #ccc;
 	width: 200px;
+}
+
+.logo {
+	width: 100px;
+	height: 60px;
+	margin-right: 10px;
+	position: absolute;
+	background-position: 0 -13px;
+	background-size: 90%;
+	background-image: url('/img/streetstories2.png');
 }
