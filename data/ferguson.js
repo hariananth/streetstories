@@ -253,6 +253,31 @@ window.mapInfo = [
 },
     ]
   },
+   {
+    "date": "August 19, 2014",
+    "lat": 38.669221,
+    "lng": -90.273503,
+    "markers": [
+      {
+"date": "August 19, 2014",
+"lat": 38.669221,
+"lng":  -90.273503,
+"headline": "",
+"type": window.markerTypes.news,
+"contentType": window.infoTypes.picture,
+"link": "",
+"content": "http://i.imgur.com/H391N3Z.png"
+},
+      {
+"date": "August 25, 2014",
+"lat": 38.669221,
+"lng":  -90.273503,
+"headline": "On Augusst 25th, Michael Brown was laid to rest.",
+"type": window.markerTypes.social,
+"contentType": window.infoTypes.picture,
+"link": "",
+"content": "https://c2.staticflickr.com/6/5591/14841313420_6d555fdc4c_b.jpg"
+},
 ];
 
 
