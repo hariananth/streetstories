@@ -39,7 +39,7 @@ window.mapInfo = [
         "lat": 38.73803,
         "lng": -90.273100,
         "title": "Michael Brown Memorial",
-        "mtype": window.markerTypes.fam,
+        "mtype": window.markerTypes.family,
         "itype": window.infoTypes.picture,
         "content": "<img src='https://c2.staticflickr.com/6/5591/14841313420_6d555fdc4c_b.jpg' />"
       }
