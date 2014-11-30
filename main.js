@@ -41,7 +41,20 @@ function initialize() {
     populateDateSelector();
     // kill infowindows if the user changes positions
     google.maps.event.addListener(window.map, "position_changed", closeInfoWindows);
+    // load a sync'd map into mappop
+    createOverheadMap();
   }
+}
+
+function createOverheadMap() {
+  var mapOptions = {
+    zoom : 18,
+    mapTypeId : google.maps.MapTypeId.ROADMAP
+  };
+  var mapDiv = document.getElementById("mappop");
+  var mapCanvas = new google.maps.Map(mapDiv, mapOptions);
+  mapCanvas.setStreetView(window.map);
+  mapCanvas.bindTo("center", window.map, "position");
 }
 
 function populateDateSelector() {
