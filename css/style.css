@@ -1,4 +1,4 @@
-g, circle, img[src*="gstatic"] {
+g, circle, img[src*="gstatic"][style*='left: 0px'], img[src*="gstatic"][style*='left: -17px'] {
   display: none;
 }
 #pano, #pano div, iframe {
@@ -19,9 +19,13 @@ g, circle, img[src*="gstatic"] {
   text-align: center;
   margin-bottom: 5px !important;
 }
+#pano .ss-info-content img {
+  max-width: 100%;
+}
 #pano .ss-info-content.info-tweet {
   background-color: white !important;
   padding: 25px !important;
+  font-size: 14px !important;
 }
 #pano .ss-info-content.info-picture {
   max-width: 300px;

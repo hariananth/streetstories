@@ -31,7 +31,10 @@ function initialize() {
   if (dateIdxIsValid(0)) {
     // add markers for starting location
     addMarkers(window.mapInfo[0]);
+    // configure dates
     populateDateSelector();
+    // kill infowindows if the user changes positions
+    google.maps.event.addListener(window.map, "position_changed", closeInfoWindows);
   }
 }
 
@@ -69,7 +72,6 @@ function changeDate() {
   }
 }
 
-
 function addMarkers(info) {
   if (window.map !== null &&
       typeof(info.markers) !== undefined &&
@@ -98,9 +100,7 @@ function addMarker(markerInfo) {
   });
   google.maps.event.addListener(marker, "click", function() {
     // close open infowindows
-    while(window.currentInfoWindows.length > 0) {
-      window.currentInfoWindows.pop().close();
-    }
+    closeInfoWindows();
     // save new infowindow
     window.currentInfoWindows.push(markerIW);
     // show
@@ -110,6 +110,12 @@ function addMarker(markerInfo) {
 
   // save marker and infowindow
   window.currentMarkers.push(marker);
+}
+
+function closeInfoWindows() {
+  while(window.currentInfoWindows.length > 0) {
+    window.currentInfoWindows.pop().close();
+  }
 }
 
 function modifyInfoWindows() {
