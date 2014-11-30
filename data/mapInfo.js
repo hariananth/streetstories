@@ -26,16 +26,6 @@ window.mapInfo = [
         "link": "",
         "content": "6SGkD6CN0mk"
       },
-      {
-        "date": "August 9, 2014",
-        "lat": 38.739332,
-        "lng": -90.273152,
-        "headline": "",
-        "type": window.markerTypes.news,
-        "contentType": window.infoTypes.video,
-        "link": "",
-        "content": "<iframe width='560' height='315' src='http://www.youtube.com/embed/6SGkD6CN0mk?autoplay=1'></iframe>"
-      },
     ]
   },
   {
