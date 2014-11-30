@@ -48,7 +48,8 @@ function populateDateSelector() {
       speed: 300,
       slidesToShow: 1,
       centerMode: true,
-      variableWidth: true
+      variableWidth: true,
+      onAfterChange: changeDate
     });
 
     $.each( window.mapInfo, function( index, value ){
@@ -58,6 +59,14 @@ function populateDateSelector() {
     });
  
   });
+}
+
+function changeDate() {
+  for (var i=0; i<window.mapInfo.length; i++) {
+    if (window.mapInfo[i].date == $(".slick-active").children("h3").text()) {
+      setDate(i);
+    }
+  }
 }
 
 
