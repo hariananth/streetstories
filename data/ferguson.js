@@ -98,7 +98,7 @@ window.mapInfo = [
 "type": window.markerTypes.social,
 "contentType": window.infoTypes.tweet,
 "link": "",
-"content": '<blockquote class="twitter-tweet" lang="en"><p>love this &lt;3 RT <a href="https://twitter.com/stevenjhsieh">@stevenjhsieh</a>: Man waving a Palestinian flag in <a href="https://twitter.com/hashtag/Ferguson?src=hash">#Ferguson</a> &quot;because they supported St. Louis.&quot; <a href="http://t.co/tn96pvFEXF">pic.twitter.com/tn96pvFEXF</a></p>&mdash; Grim_Chickn (@grm_chikn) <a href="https://twitter.com/grm_chikn/status/500793766081744896">August 16, 2014</a></blockquote>'
+"content": "<blockquote class='twitter-tweet' lang='en'><p>love this &lt;3 RT <a href='https://twitter.com/stevenjhsieh'>@stevenjhsieh</a>: Man waving a Palestinian flag in <a href='https://twitter.com/hashtag/Ferguson?src=hash'>#Ferguson</a> &quot;because they supported St. Louis.&quot; <a href='http://t.co/tn96pvFEXF'>pic.twitter.com/tn96pvFEXF</a></p>&mdash; Grim_Chickn (@grm_chikn) <a href='https://twitter.com/grm_chikn/status/500793766081744896'>August 16, 2014</a></blockquote><script async src='//platform.twitter.com/widgets.js' charset='utf-8'></script>"
 },
 {
 "date": "August 12, 2014",
@@ -108,7 +108,7 @@ window.mapInfo = [
 "type": window.markerTypes.gov,
 "contentType": window.infoTypes.video,
 "link": "",
-"content": '<blockquote class="twitter-tweet" lang="en"><p>It&#39;s just past 1 a.m. in <a href="https://twitter.com/hashtag/Ferguson?src=hash">#Ferguson</a>, and this is what we&#39;re seeing <a href="http://t.co/ZiKgGP2TGq">pic.twitter.com/ZiKgGP2TGq</a></p>&mdash; Alan Blinder (@alanblinder) <a href="https://twitter.com/alanblinder/status/500522932914114561">August 16, 2014</a></blockquote>'
+"content": "http://i.imgur.com/LsA3JUc.png"
 },
 {
 "date": "August 12, 2014",
@@ -118,14 +118,14 @@ window.mapInfo = [
 "type": window.markerTypes.social,
 "contentType": window.infoTypes.video,
 "link": "",
-"content": '<blockquote class="twitter-tweet" lang="en"><p>It&#39;s just past 1 a.m. in <a href="https://twitter.com/hashtag/Ferguson?src=hash">#Ferguson</a>, and this is what we&#39;re seeing <a href="http://t.co/ZiKgGP2TGq">pic.twitter.com/ZiKgGP2TGq</a></p>&mdash; Alan Blinder (@alanblinder) <a href="https://twitter.com/alanblinder/status/500522932914114561">August 16, 2014</a></blockquote>'
+"content": "qXhtvd0o2Fw"
 },
     ]
   },
   {
     "date": "August 13, 2014",
-    "lat": 38.790271,
-    "lng": -90.301486,
+    "lat": 38.790223,
+    "lng": -90.303040,
     "markers": [
       {
 "date": "August 13, 2014",
@@ -160,10 +160,50 @@ window.mapInfo = [
     ]
   },
   {
-    "date": "August 25th",
-    "lat": 38.73857,
-    "lng": -90.27387,
+    "date": "August 14, 2014",
+    "lat": 38.741005,
+    "lng": -90.303095,
     "markers": [
+      {
+"date": "August 14, 2014",
+"lat": 38.741005,
+"lng":  -90.303095,
+"headline": "",
+"type": window.markerTypes.gov,
+"contentType": window.infoTypes.video,
+"link": "",
+"content": "94SSU0CRg24"
+},
+{
+"date": "August 14, 2014",
+"lat": 38.741005,
+"lng":  -90.303095,
+"headline": "",
+"type": window.markerTypes.gov,
+"contentType": window.infoTypes.picture,
+"link": "",
+"content": "http://i.imgur.com/z761i8E.png"
+},
+{
+"date": "August 14, 2014",
+"lat": 38.637342,
+"lng":  -90.234959,
+"headline": "Around the country, people hit the streets calling out policing in America",
+"type": window.markerTypes.social,
+"contentType": window.infoTypes.picture,
+"link": "",
+"content": "http://i.imgur.com/4GLvlAB.png"
+},
+{
+"date": "August 14, 2014",
+"lat": 38.637342,
+"lng":  -90.234959,
+"headline": "And in Ferguson, protests raged another night",
+"type": window.markerTypes.social,
+"contentType": window.infoTypes.picture,
+"link": "",
+"content": "https://c1.staticflickr.com/9/8662/15885348561_1cf5208088_c.jpg"
+},
     ]
   }
 ];
