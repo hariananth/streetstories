@@ -4,13 +4,13 @@ window.currentInfoWindows = [];
 
 // Script for showing / hiding the opening text
 $(function() {
-  $('#overlay').click(function(){
-    $('#overlay').css('display', 'none');
+  $("#overlay").click(function(){
+    $("#overlay").css("display", "none");
   })
-  $(".infoReturn").click(function(){
-    $('#overlay').slideToggle();
+  $("#infoReturn").click(function(){
+    $("#overlay").slideToggle();
   });
-  $(".mapToggle").click(function(){
+  $("#mapToggle").click(function(){
     $("#mappop").slideToggle();
   })
   $(".name").click(function(){
@@ -41,7 +41,21 @@ function initialize() {
     populateDateSelector();
     // kill infowindows if the user changes positions
     google.maps.event.addListener(window.map, "position_changed", closeInfoWindows);
+    // load a sync'd map into mappop
+    createOverheadMap();
   }
+}
+
+function createOverheadMap() {
+  var mapCanvas = new google.maps.Map(document.getElementById("mappop"), {
+    zoom: 16,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  });
+  mapCanvas.setStreetView(window.map);
+  //mapCanvas.bindTo("center", window.map, "position");
+  //mapCanvas.setCenter(window.map.getPosition());
+  window.test = mapCanvas;
+  $("#mapToggle").removeClass("loading");
 }
 
 function populateDateSelector() {
