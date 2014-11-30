@@ -6,9 +6,19 @@
   -webkit-box-shadow: none !important;
 }
 
-#pano .ss-info-window.info-tweet {
+#pano .ss-info-title {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 5px !important;
+}
+#pano .ss-info-content.info-tweet {
   background-color: white !important;
   padding: 25px !important;
+}
+#pano .ss-info-content.info-picture {
+  max-width: 300px;
+  max-height: 300px;
 }
 
 #overlay {
