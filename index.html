@@ -17,7 +17,7 @@
 
     <!-- Load the Google Maps API -->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/vendor/jquery.js"></script>
 
     <!-- Load the Sounds of Street View code -->
     <!-- <script src="sosv.min.js"></script> -->
@@ -40,13 +40,13 @@
       <section class="top-bar-section">
         <!-- Right Nav Section -->
         <ul class="right">
-          <li id="#info-toggle"><a href="#"><i class="fi-info"></i></a></li>
+          <li id="#toggle"><a href="#"><i class="fi-info"></i></a></li>
           <li id="#map-toggle"><a href="#"><i class="fi-map"></i></a></li>
         </ul>
 
         <!-- Left Nav Section -->
         <ul class="left">
-          <li class="has-dropdown drop-adjust">
+          <li class="has-dropdown drop-adjust padding-shim">
             <a href="#">Load current town here</a>
             <ul class="dropdown">
               <li><a href="#">Ferguson</a></li>
@@ -68,11 +68,12 @@
     <div id="pano"></div>
     <script>
     $(function(){
-      $('.intro').click(function(){
+      $('#overlay').click(function(){
         $('#overlay').css('display', 'none');
-      });
-      $('#info-toggle').click(function(){
-        $('#overlay').slideToggle();
+      })
+      $('.top-bar-section').click(function(){
+        console.log('working')
+        // $('#overlay').css('display', 'none');
       });
     });
     </script>
