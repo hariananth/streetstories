@@ -43,6 +43,7 @@ function populateDateSelector() {
       arrows: true,
       dots: true,
       focusOnSelect: true,
+      draggable: true,
       infinite: true,
       speed: 300,
       slidesToShow: 1,
