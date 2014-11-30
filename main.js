@@ -12,7 +12,16 @@ $(function(){
   });
 });
 
+  //$('.timeline').slick();
+ 
 function initialize() {
+ $('.timeline').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
+
+
   // error checking
   if (typeof(mapInfo) === "undefined" || mapInfo === null) {
     console.error("Unable to load map info.");
@@ -23,7 +32,12 @@ function initialize() {
     // we don't need to set the location, just add the markers
     addMarkers(mapInfo[0]);
   }
+
 }
+
+
+
+
 
 function addMarkers(info) {
   if (window.map !== null &&

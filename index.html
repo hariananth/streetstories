@@ -12,6 +12,7 @@
     </style>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/foundation-icons.css" />
+    <link rel="stylesheet" href="css/slick.css" />
     <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css" />
 
@@ -19,6 +20,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <!-- Load the Sounds of Street View code -->
     <!-- <script src="sosv.min.js"></script> -->
     <script src="howler.js"></script>
@@ -44,6 +46,12 @@
           <li id="#map-toggle"><a href="#"><i class="fi-map"></i></a></li>
         </ul>
 
+       <div class="center slider timeline">
+          <div>First Date</div>
+          <div>Second Date</div>
+          <div>Third Date</div>
+        </div>
+
         <!-- Left Nav Section -->
         <ul class="left">
           <li class="has-dropdown drop-adjust">
@@ -66,15 +74,9 @@
       </div>
     </div>
     <div id="pano"></div>
-    <script>
-    $(function(){
-      $('.intro').click(function(){
-        $('#overlay').css('display', 'none');
-      });
-      $('#info-toggle').click(function(){
-        $('#overlay').slideToggle();
-      });
-    });
-    </script>
+
+
+
+
   </body>
 </html>
