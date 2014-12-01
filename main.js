@@ -94,7 +94,7 @@ function populateDateSelector() {
 
     $.each( window.mapInfo, function( index, value ){
       var link_date = 
-      '<div><h3 class="text-center slider-tweak">'+value.date+'</h3><p class="text-center slider-headline">'+value.title+'</p></div>';
+      '<div><h3 class="text-center slider-tweak">'+value.date+'</h3><p class="text-center slider-headline header-title">'+value.title+'</p></div>';
       $('.timeline').slickAdd(link_date)
     });
  
@@ -141,7 +141,7 @@ function addMarker(markerInfo) {
   });
 
   // create associated infowindow
-  var contentString = "<div class='ss-info-window' style='padding: 30px !important'><div class='ss-info-headline'>"+markerInfo.headline+"</div><div class='ss-info-content "+markerInfo.contentType+"'>";
+  var contentString = "<div class='ss-info-window' style='padding: 30px !important'><div class='ss-info-headline'>"+markerInfo.headline+"</div><div class='ss-info-content "+markerInfo.infoType+"'>";
   if (markerInfo.infoType === window.infoTypes.picture) {
     contentString += "<img src='"+markerInfo.content+"' />";
   } else if (markerInfo.infoType === window.infoTypes.video) {
@@ -149,7 +149,6 @@ function addMarker(markerInfo) {
   } else if (markerInfo.infoType === window.infoTypes.tweet) {
     contentString += markerInfo.content;
   }
-  contentString += markerInfo.content;
   contentString += "</div>";
   if (markerInfo.link !== "") {
     contentString += "<div class='ss-info-link'><a href='"+markerInfo.link+"'>Read more...</a></div>";
@@ -202,6 +201,9 @@ function setDate(dateIdx) {
     // set new location
     var newCenter = new google.maps.LatLng(newInfo.lat, newInfo.lng);
     window.map.setPosition(newCenter);
+    if (newInfo.heading) {
+      window.map.setPov({"heading": newInfo.heading, "pitch": -10, "zoom": 1});
+    }
     // add new markers
     addMarkers(newInfo);
   }
