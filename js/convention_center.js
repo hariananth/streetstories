@@ -11,15 +11,11 @@ function code3_2() {
     panoProvider:  getCustomPanorama //('visitor_center')
   };
   // Create a StreetView object.
-  var streetViewDiv = document.getElementById('streetview_canvas');
+  var streetViewDiv = document.getElementById('pano');
   streetViewDiv.style.fontSize = "15px";
   var streetView = new google.maps.StreetViewPanorama(streetViewDiv, streetViewOptions);
 }
 
-function getCustomPanoramaTileUrl(panoID, zoom, tileX, tileY) {
-  // Return a pano image given the panoID.
-  return "/img/pano_hallway.jpg";
-}
 
 function getCustomPanorama(panoID) {
   var streetViewPanoramaData = {
@@ -47,5 +43,28 @@ function getCustomPanorama(panoID) {
       return streetViewPanoramaData;
   }
 }
+
+// Script for showing / hiding the opening text
+$(function() {
+  $("#overlay").click(function(){
+    $("#overlay").css("display", "none");
+  })
+  $("#infoReturn").click(function(){
+    $("#overlay").slideToggle();
+  });
+  $("#mapToggle").click(function(){
+    $("#mappop").slideToggle();
+    // hacky af but this is a prototype... right?
+    setTimeout(function() {
+      ensureOverheadConfigured();
+    }, 500);
+  })
+  $(".name").click(function(){
+    $(".about").slideToggle();
+  })
+  $(".about").click(function(){
+    $(".about").slideToggle();
+  })
+});
 
 google.maps.event.addDomListener(window, 'load', code3_2);
