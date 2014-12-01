@@ -127,8 +127,8 @@ window.mapInfo = [
   },
   {
     "date": "August 13, 2014",
-    "lat": 38.790223,
-    "lng": -90.303040,
+    "lat": 38.789886,
+    "lng": -90.301324,
     "title": "",
     "markers": [
       {
@@ -327,8 +327,8 @@ window.mapInfo = [
   },
   {
     "date": "November 18-24, 2014",
-    "lat": 38.710826, // first lat-long is actually set by sosv (content.json)
-    "lng": -90.309098, // so these aren't used
+    "lat": 38.710358,
+    "lng": -90.307676,
     "title": "",
     "markers": [
       {
