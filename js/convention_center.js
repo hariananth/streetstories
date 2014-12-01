@@ -23,13 +23,13 @@ function getCustomPanorama(panoID) {
     copyright: 'StreetStories',
     zoom: 1,
     pov: {
-      heading : 255,
+      heading : 0,
       pitch : 0,
       zoom : 1 },
     tiles: {
-        tileSize: new google.maps.Size(2048, 1024),
-        worldSize: new google.maps.Size(2048, 1024),
-        centerHeading: 180,
+        tileSize: new google.maps.Size(1024, 512),
+        worldSize: new google.maps.Size(3000, 1500),
+        centerHeading: 10,
         getTileUrl: getCustomPanoramaTileUrl
      }
   };
