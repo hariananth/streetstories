@@ -6,23 +6,53 @@
   "pitch": "-10.715239367976785",
   "sounds": [
     {
-      "name": "accordion",
-      "lat": "48.73833",
-      "lng": "-90.273545",
+      "name": "protest",
+      "lat": "38.648877",
+      "lng": "-90.338531",
       "src": [
-        "audio/Hands_up_Dont_shoot_loop.mp3"
+        "audio/handsdown.mp3"
       ],
-      "db": "80",
+      "db": "50",
       "pause": "0"
     },
     {
-      "name": "church-bell-2",
-      "lat": "48.73833",
-      "lng": "-90.273545",
+      "name": "dont-shoot",
+      "lat": "",
+      "lng": "",
       "src": [
-        "audio/Hands_up_Dont_shoot_loop.mp3"
+        "audio/dont_shoot.mp3"
       ],
-      "db": "100",
+      "db": "50",
+      "pause": "0"
+    },
+    {
+      "name": "mb-grand-jury",
+      "lat": "38.740754",
+      "lng": "-90.303037",
+      "src": [
+        "audio/mbrown_grandjury.mp3"
+      ],
+      "db": "50",
+      "pause": "0"
+    },
+    {
+      "name": "mb-press",
+      "lat": "",
+      "lng": "",
+      "src": [
+        "audio/mbrown_press.mp3"
+      ],
+      "db": "50",
+      "pause": "0"
+    },
+    {
+      "name": "obama",
+      "lat": "",
+      "lng": "",
+      "src": [
+        "audio/obama.mp3"
+      ],
+      "db": "50",
       "pause": "0"
     }
   ]
