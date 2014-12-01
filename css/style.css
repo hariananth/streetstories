@@ -59,10 +59,15 @@ g, circle, img[src*="gstatic"][style*='left: 0px'], img[src*="gstatic"][style*='
   font-weight: bold;
 }
 .fb-share-button {
-  padding: 0px 25px;
+  padding: 0px 25px 0px 0px;
 }
 .fb-share-button > span {
   vertical-align: middle !important;
+  position: relative;
+  top: -2px;
+}
+#twitter-widget-0 {
+  vertical-align: middle;
   position: relative;
   top: -2px;
 }
