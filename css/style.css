@@ -53,6 +53,14 @@ g, circle, img[src*="gstatic"][style*='left: 0px'], img[src*="gstatic"][style*='
   font-size: 18px;
   font-weight: bold;
 }
+.fb-share-button {
+  padding: 0px 25px;
+}
+.fb-share-button > span {
+  vertical-align: middle !important;
+  position: relative;
+  top: -2px;
+}
 
 #overlay, .about {
 	background-color: rgba(0,0,0,.7);
