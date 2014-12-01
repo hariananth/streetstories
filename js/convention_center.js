@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Street Stories - Media In Context</title>
-
-<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDxSkKsMgiZTaiDTyswwiy5vQElYeOe_Ac&sensor=false" type="text/javascript"> </script>
-
-
-<script type='text/javascript'>
 
 function initialize(){
-	code3_2();
+  code3_2();
 }
 
 function code3_2() {
@@ -21,29 +11,25 @@ function code3_2() {
     panoProvider:  getCustomPanorama //('visitor_center')
   };
   // Create a StreetView object.
-  var streetViewDiv = document.getElementById('streetview_canvas');
+  var streetViewDiv = document.getElementById('pano');
   streetViewDiv.style.fontSize = "15px";
   var streetView = new google.maps.StreetViewPanorama(streetViewDiv, streetViewOptions);
 }
 
-function getCustomPanoramaTileUrl(panoID, zoom, tileX, tileY) {
-  // Return a pano image given the panoID.
-  return "/img/pano_hallway.jpg";
-}
 
 function getCustomPanorama(panoID) {
   var streetViewPanoramaData = {
     links: [],
     copyright: 'StreetStories',
-   	zoom: 1,
+    zoom: 1,
     pov: {
       heading : 255,
       pitch : 0,
       zoom : 1 },
     tiles: {
-        tileSize: new google.maps.Size(512, 512),
-        worldSize: new google.maps.Size(5000, 10000),
-        centerHeading: 0,
+        tileSize: new google.maps.Size(2048, 1024),
+        worldSize: new google.maps.Size(2048, 1024),
+        centerHeading: 180,
         getTileUrl: getCustomPanoramaTileUrl
      }
   };
@@ -58,16 +44,27 @@ function getCustomPanorama(panoID) {
   }
 }
 
+// Script for showing / hiding the opening text
+$(function() {
+  $("#overlay").click(function(){
+    $("#overlay").css("display", "none");
+  })
+  $("#infoReturn").click(function(){
+    $("#overlay").slideToggle();
+  });
+  $("#mapToggle").click(function(){
+    $("#mappop").slideToggle();
+    // hacky af but this is a prototype... right?
+    setTimeout(function() {
+      ensureOverheadConfigured();
+    }, 500);
+  })
+  $(".name").click(function(){
+    $(".about").slideToggle();
+  })
+  $(".about").click(function(){
+    $(".about").slideToggle();
+  })
+});
+
 google.maps.event.addDomListener(window, 'load', code3_2);
-</script>
-
-</head>
-
-<body>
-
-<div id="streetview_canvas" style="width:100vh;height:100vh;margin-left:3em;"></div>
-
-
- </body>
- </html>
-

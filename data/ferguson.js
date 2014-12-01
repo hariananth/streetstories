@@ -16,7 +16,7 @@ window.mapInfo = [
     "lat": 38.7434436, // first lat-long is actually set by sosv
     "lng": -90.2789311, // so these aren't used
     "heading": 304.4,
-    "title": "",
+    "title": "Day One",
     "markers": [
       {
         "date": "August 9, 2014",
@@ -55,7 +55,7 @@ window.mapInfo = [
     "lat": 38.749592,
     "lng": -90.279925,
     "heading": 306.86,
-    "title": "",
+    "title": "The Next Day in America",
     "markers": [
       {
         "date": "August 11, 2014",
@@ -94,7 +94,7 @@ window.mapInfo = [
     "lat": 38.648863,
     "lng": -90.338427,
     "heading": 221.07,
-    "title": "",
+    "title": "The FBI Steps In",
     "markers": [
       {
         "date": "August 12, 2014",
@@ -132,9 +132,8 @@ window.mapInfo = [
     "date": "August 13, 2014",
     "lat": 38.789886,
     "lng": -90.3013244,
-    "heading": 281.27,
     "heading": -68.70,
-    "title": "",
+    "title": "From Ferguson, a Tidal Wave",
     "markers": [
       {
         "date": "August 13, 2014",
@@ -173,7 +172,7 @@ window.mapInfo = [
     "lat": 38.740808,
     "lng": -90.303542,
     "heading": 30.62,
-    "title": "",
+    "title": "America Marches with Ferguson",
     "markers": [
       {
         "date": "August 14, 2014",
@@ -222,7 +221,7 @@ window.mapInfo = [
     "lat": 38.741005,
     "lng": -90.303095,
     "heading": 44.05,
-    "title": "",
+    "title": "Naming the Shooter",
     "markers": [
       {
         "date": "August 15, 2014",
@@ -271,7 +270,7 @@ window.mapInfo = [
     "lat": 38.669221,
     "lng": -90.273503,
     "heading": -162.72,
-    "title": "",
+    "title": "More Spilled Blood",
     "markers": [
       {
         "date": "August 19, 2014",
@@ -300,7 +299,7 @@ window.mapInfo = [
     "lat": 38.740754,
     "lng": -90.303037,
     "heading": 87.94,
-    "title": "",
+    "title": "#FergusonOctober",
     "markers": [
       {
         "date": "September 16, 2014",
@@ -339,7 +338,7 @@ window.mapInfo = [
     "lat": 38.710358,
     "lng": -90.307676,
     "heading": -46.3554,
-    "title": "",
+    "title": "The Decision",
     "markers": [
       {
         "date": "November 18, 2014",

@@ -15,18 +15,18 @@
     <link rel="stylesheet" href="css/slick.css" />
     <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDxSkKsMgiZTaiDTyswwiy5vQElYeOe_Ac&sensor=false" type="text/javascript"> </script>
     <!-- Load the Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script src="js/vendor/jquery.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <!-- Load the Sounds of Street View code -->
     <!-- <script src="sosv.min.js"></script> -->
-    <script src="data/mediaincontext.js"></script>
-    <script src="js/custom_panoramas.js"></script>
+    <script src="js/convention_center.js"></script>
+    <script> function getCustomPanoramaTileUrl(panoID, zoom, tileX, tileY) { return "/img/pano_hallway.jpg";}</script>
+
   </head>
   <body>
     <nav class="top-bar" data-topbar role="navigation">
-
       <ul class="title-area">
       <div class="logo">
       </div>
@@ -63,10 +63,11 @@
         </div>
       </div>
     </div>
+    <div id="pano" style="width:100%;height:100%;z-index=-50;"></div>
     <div id="mappop">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24893.14966790144!2d-90.28906299999998!3d38.748937500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87df49e36de09f05%3A0x7b87d2fc9ee09289!2sFerguson%2C+MO%2C+USA!5e0!3m2!1sen!2s!4v1417344206626" width="300" height="200" frameborder="0" style="border:0"></iframe>
     </div>
-    <div id="pano"></div>
     <script>initialize()</script>
   </body>
-</html>
+ </html>
+
