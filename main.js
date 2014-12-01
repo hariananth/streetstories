@@ -39,19 +39,19 @@ function dateIdxIsValid(idx) {
 
 // called once the map has been created
 function initialize() {
-  console.log("runnign initialize")
+  //console.log("running initialize");
 
   if (dateIdxIsValid(0)) {
-    console.log( "add markers for starting location" )
+    //console.log("add markers for starting location");
     addMarkers(window.mapInfo[0]);
     
-    console.log( "configure dates" )
+    //console.log("configure dates");
     populateDateSelector();
     
-    console.log( "kill infowindows if the user changes positions" )
+    //console.log("kill infowindows if the user changes positions");
     google.maps.event.addListener(window.map, "position_changed", closeInfoWindows);
     
-    console.log( "load a sync'd map into mappop" )
+    //console.log("load a sync'd map into mappop");
     createOverheadMap();
   }
 }
