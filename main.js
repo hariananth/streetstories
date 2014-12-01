@@ -39,19 +39,19 @@ function dateIdxIsValid(idx) {
 
 // called once the map has been created
 function initialize() {
-  console.log("runnign initialize")
+  //console.log("running initialize");
 
   if (dateIdxIsValid(0)) {
-    console.log( "add markers for starting location" )
+    //console.log("add markers for starting location");
     addMarkers(window.mapInfo[0]);
     
-    console.log( "configure dates" )
+    //console.log("configure dates");
     populateDateSelector();
     
-    console.log( "kill infowindows if the user changes positions" )
+    //console.log("kill infowindows if the user changes positions");
     google.maps.event.addListener(window.map, "position_changed", closeInfoWindows);
     
-    console.log( "load a sync'd map into mappop" )
+    //console.log("load a sync'd map into mappop");
     createOverheadMap();
   }
 }
@@ -93,9 +93,8 @@ function populateDateSelector() {
     });
 
     $.each( window.mapInfo, function( index, value ){
-      console.log(value.date);
       var link_date = 
-      '<div><h3 class="text-center slider-tweak">'+value.date+'</h3><p class="text-center slider-headline">test</p></div>';
+      '<div><h3 class="text-center slider-tweak">'+value.date+'</h3><p class="text-center slider-headline">'+value.title+'</p></div>';
       $('.timeline').slickAdd(link_date)
     });
  
@@ -142,7 +141,21 @@ function addMarker(markerInfo) {
   });
 
   // create associated infowindow
-  var contentString = "<div class='ss-info-window' style='padding: 30px !important'><div class='ss-info-headline'>"+markerInfo.headline+"</div><div class='ss-info-content "+markerInfo.contentType+"'>"+markerInfo.content+"</div><div class='ss-info-link'><a href='"+markerInfo.link+"'>Read more...</a></div></div>";
+  var contentString = "<div class='ss-info-window' style='padding: 30px !important'><div class='ss-info-headline'>"+markerInfo.headline+"</div><div class='ss-info-content "+markerInfo.contentType+"'>";
+  if (markerInfo.infoType === window.infoTypes.picture) {
+    contentString += "<img src='"+markerInfo.content+"' />";
+  } else if (markerInfo.infoType === window.infoTypes.video) {
+    contentString += "<iframe width='373' height='210' src='//www.youtube.com/embed/"+markerInfo.content+"?autoplay=1' frameborder='0' allowfullscreen></iframe>";
+  } else if (markerInfo.infoType === window.infoTypes.tweet) {
+    contentString += markerInfo.content;
+  }
+  contentString += markerInfo.content;
+  contentString += "</div>";
+  if (markerInfo.link !== "") {
+    contentString += "<div class='ss-info-link'><a href='"+markerInfo.link+"'>Read more...</a></div>";
+  }
+  contentString += "</div>";
+
   var markerIW = new google.maps.InfoWindow({
     content: contentString
   });
