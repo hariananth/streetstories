@@ -1,6 +1,11 @@
 g, circle, img[src*="gstatic"][style*='left: 0px'], img[src*="gstatic"][style*='left: -17px'] {
   display: none;
 }
+
+.pluginCountButton .pluginCountNum {
+	display: none;
+}
+
 #pano {
   height: 100%;
 }
