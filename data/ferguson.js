@@ -313,6 +313,41 @@ window.mapInfo = [
 "link": "",
 "content": "http://photos-g.ak.instagram.com/hphotos-ak-xap1/10724032_281371612061454_1935100233_n.jpg"
 },
+{
+"date": "November 18-24, 2014",
+"lat": 38.710826, // first lat-long is actually set by sosv (content.json)
+"lng": -90.309098, // so these aren't used
+"markers": [
+{
+"date": "November 18, 2014",
+"lat": 38.710826,
+"lng": -90.309098,
+"headline": "Ferguson governor declares state of emergency ahead of grand jury decision",
+"type": window.markerTypes.news,
+"contentType": window.infoTypes.picture,
+"link": "",
+"content": "http://i.imgur.com/wCj6CKq.png"
+},
+{
+"date": "November 18, 2014",
+"lat": 38.710826,
+"lng": -90.309098,
+"headline": "",
+"type": window.markerTypes.news,
+"contentType": window.infoTypes.tweet,
+"link": "",
+"content": '<blockquote class="twitter-tweet" lang="en"><p>Breaking News: No Indictment of Officer in Ferguson Case&#10;<a href="http://t.co/8f1zBwGHbV">http://t.co/8f1zBwGHbV</a></p>&mdash; The New York Times (@nytimes) <a href="https://twitter.com/nytimes/status/537070083982753792">November 25, 2014</a></blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>'
+},
+{
+"date": "November 24, 2014",
+"lat": 38.710826,
+"lng":-90.309098,
+"headline": "",
+"type": window.markerTypes.family,
+"contentType": window.infoTypes.video,
+"link": "",
+"content": "h_1t-pQ2fx8"
+},
 ];
 
 
