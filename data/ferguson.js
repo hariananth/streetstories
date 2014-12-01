@@ -15,7 +15,7 @@ window.mapInfo = [
     "date": "August 9-10, 2014",
     "lat": 38.738312, // first lat-long is actually set by sosv (content.json)
     "lng": -90.273611, // so these aren't used
-    "title": "",
+    "title": "Day One",
     "markers": [
       {
         "date": "August 9, 2014",
@@ -53,7 +53,7 @@ window.mapInfo = [
     "date": "August 11, 2014",
     "lat": 38.749613,
     "lng": -90.279912,
-    "title": "",
+    "title": "The next day in America",
     "markers": [
       {
         "date": "August 11, 2014",
@@ -91,7 +91,7 @@ window.mapInfo = [
     "date": "August 12, 2014",
     "lat": 38.648863,
     "lng": -90.338427,
-    "title": "",
+    "title": "The FBI steps in",
     "markers": [
       {
         "date": "August 12, 2014",
@@ -129,7 +129,7 @@ window.mapInfo = [
     "date": "August 13, 2014",
     "lat": 38.789886,
     "lng": -90.301324,
-    "title": "",
+    "title": "From Ferguson, a tidal wave",
     "markers": [
       {
         "date": "August 13, 2014",
@@ -167,7 +167,7 @@ window.mapInfo = [
     "date": "August 14, 2014",
     "lat": 38.741005,
     "lng": -90.303095,
-    "title": "",
+    "title": "Chicago, D.C., New York march with Ferguson",
     "markers": [
       {
         "date": "August 14, 2014",
@@ -215,7 +215,7 @@ window.mapInfo = [
     "date": "August 15-18, 2014",
     "lat": 38.741005,
     "lng": -90.303095,
-    "title": "",
+    "title": "Naming the shooter",
     "markers": [
       {
         "date": "August 15, 2014",
@@ -263,7 +263,7 @@ window.mapInfo = [
     "date": "August 19, 2014",
     "lat": 38.669221,
     "lng": -90.273503,
-    "title": "",
+    "title": "More spilled blood",
     "markers": [
       {
         "date": "August 19, 2014",
@@ -291,7 +291,7 @@ window.mapInfo = [
     "date": "September 16, 2014",
     "lat": 38.740754,
     "lng": -90.303037,
-    "title": "",
+    "title": "#FergusonOctober",
     "markers": [
       {
         "date": "September 16, 2014",
@@ -329,7 +329,7 @@ window.mapInfo = [
     "date": "November 18-24, 2014",
     "lat": 38.710358,
     "lng": -90.307676,
-    "title": "",
+    "title": "The decision",
     "markers": [
       {
         "date": "November 18, 2014",
