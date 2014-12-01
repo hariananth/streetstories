@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Street Stories - Media In Context</title>
-
-<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDxSkKsMgiZTaiDTyswwiy5vQElYeOe_Ac&sensor=false" type="text/javascript"> </script>
-
-
-<script type='text/javascript'>
 
 function initialize(){
-	code3_2();
+  code3_2();
 }
 
 function code3_2() {
@@ -35,15 +25,15 @@ function getCustomPanorama(panoID) {
   var streetViewPanoramaData = {
     links: [],
     copyright: 'StreetStories',
-   	zoom: 1,
+    zoom: 1,
     pov: {
       heading : 255,
       pitch : 0,
       zoom : 1 },
     tiles: {
-        tileSize: new google.maps.Size(512, 512),
-        worldSize: new google.maps.Size(5000, 10000),
-        centerHeading: 0,
+        tileSize: new google.maps.Size(2048, 1024),
+        worldSize: new google.maps.Size(2048, 1024),
+        centerHeading: 180,
         getTileUrl: getCustomPanoramaTileUrl
      }
   };
@@ -59,15 +49,3 @@ function getCustomPanorama(panoID) {
 }
 
 google.maps.event.addDomListener(window, 'load', code3_2);
-</script>
-
-</head>
-
-<body>
-
-<div id="streetview_canvas" style="width:100vh;height:100vh;margin-left:3em;"></div>
-
-
- </body>
- </html>
-
