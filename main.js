@@ -141,7 +141,21 @@ function addMarker(markerInfo) {
   });
 
   // create associated infowindow
-  var contentString = "<div class='ss-info-window' style='padding: 30px !important'><div class='ss-info-headline'>"+markerInfo.headline+"</div><div class='ss-info-content "+markerInfo.contentType+"'>"+markerInfo.content+"</div><div class='ss-info-link'><a href='"+markerInfo.link+"'>Read more...</a></div></div>";
+  var contentString = "<div class='ss-info-window' style='padding: 30px !important'><div class='ss-info-headline'>"+markerInfo.headline+"</div><div class='ss-info-content "+markerInfo.contentType+"'>";
+  if (markerInfo.infoType === window.infoTypes.picture) {
+    contentString += "<img src='"+markerInfo.content+"' />";
+  } else if (markerInfo.infoType === window.infoTypes.video) {
+    contentString += "<iframe width='373' height='210' src='//www.youtube.com/embed/"+markerInfo.content+"?autoplay=1' frameborder='0' allowfullscreen></iframe>";
+  } else if (markerInfo.infoType === window.infoTypes.tweet) {
+    contentString += markerInfo.content;
+  }
+  contentString += markerInfo.content;
+  contentString += "</div>";
+  if (markerInfo.link !== "") {
+    contentString += "<div class='ss-info-link'><a href='"+markerInfo.link+"'>Read more...</a></div>";
+  }
+  contentString += "</div>";
+
   var markerIW = new google.maps.InfoWindow({
     content: contentString
   });
